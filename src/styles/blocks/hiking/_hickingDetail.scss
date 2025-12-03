@@ -1,0 +1,340 @@
+.hiking-detail {
+    padding: 30px 20px 80px;
+    min-height: 100vh;
+    background: linear-gradient(180deg, rgba(244, 247, 242, 0.9) 0%, rgba(232, 240, 228, 0.6) 100%);
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+}
+
+.back-button {
+    margin-bottom: 30px;
+    
+    .back-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 16px;
+        background: rgba(255, 255, 255, 0.9);
+        color: rgba(184, 103, 46, 1);
+        border: 1px solid rgba(184, 103, 46, 0.3);
+        border-radius: 12px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        
+        &:hover {
+            background: rgba(184, 103, 46, 0.1);
+            transform: translateX(-4px);
+        }
+    }
+}
+
+.route-header {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 20px rgba(62, 77, 51, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    
+    .route-title {
+        color: rgba(62, 77, 51, 1);
+        font-family: var(--font-title);
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 44px;
+        margin-bottom: 20px;
+    }
+    
+    .route-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        margin-bottom: 20px;
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: rgba(87, 103, 76, 1);
+            font-size: 16px;
+            font-weight: 500;
+            
+            svg {
+                flex-shrink: 0;
+            }
+        }
+    }
+    
+    .route-difficulty {
+        .difficulty-stars {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            
+            .difficulty-text {
+                margin-left: 12px;
+                color: rgba(184, 103, 46, 1);
+                font-size: 16px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.route-image {
+    height: 300px;
+    background: linear-gradient(135deg, rgba(184, 103, 46, 0.1), rgba(155, 169, 112, 0.1));
+    border-radius: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .image-placeholder-large {
+        opacity: 0.5;
+    }
+}
+
+.route-details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.detail-section {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(62, 77, 51, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    
+    h2 {
+        color: rgba(62, 77, 51, 1);
+        font-family: var(--font-title);
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        
+        svg {
+            flex-shrink: 0;
+        }
+    }
+    
+    &.full-description {
+        grid-column: 1 / -1;
+        
+        .description-text {
+            color: rgba(62, 77, 51, 0.9);
+            font-size: 16px;
+            line-height: 28px;
+            
+            p {
+                margin-bottom: 16px;
+                
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    
+    &.equipment {
+        .equipment-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            
+            li {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                padding: 10px 0;
+                color: rgba(62, 77, 51, 0.9);
+                font-size: 15px;
+                border-bottom: 1px solid rgba(242, 245, 239, 1);
+                
+                &:last-child {
+                    border-bottom: none;
+                }
+                
+                svg {
+                    flex-shrink: 0;
+                }
+            }
+        }
+    }
+    
+    &.how-to-get {
+        .how-to-get-content {
+            color: rgba(62, 77, 51, 0.9);
+            
+            .starting-point {
+                font-size: 16px;
+                margin-bottom: 20px;
+                padding: 12px;
+                background: rgba(242, 245, 239, 1);
+                border-radius: 12px;
+                border-left: 4px solid rgba(184, 103, 46, 0.5);
+            }
+            
+            h3 {
+                color: rgba(62, 77, 51, 1);
+                font-size: 18px;
+                margin-bottom: 12px;
+            }
+            
+            ul {
+                padding-left: 20px;
+                
+                li {
+                    color: rgba(62, 77, 51, 0.9);
+                    margin-bottom: 8px;
+                    line-height: 24px;
+                    
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+    
+    &.attractions {
+        .attractions-list {
+            .attraction-item {
+                padding: 16px 0;
+                border-bottom: 1px solid rgba(242, 245, 239, 1);
+                
+                &:last-child {
+                    border-bottom: none;
+                }
+                
+                h3 {
+                    color: rgba(62, 77, 51, 1);
+                    font-size: 18px;
+                    margin-bottom: 8px;
+                    font-weight: 600;
+                }
+                
+                p {
+                    color: rgba(62, 77, 51, 0.8);
+                    font-size: 15px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+    
+    &.tips {
+        grid-column: 1 / -1;
+        
+        .tips-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            
+            .tip-item {
+                padding: 20px;
+                background: rgba(242, 245, 239, 0.8);
+                border-radius: 16px;
+                border: 1px solid rgba(184, 103, 46, 0.1);
+                
+                h3 {
+                    color: rgba(184, 103, 46, 1);
+                    font-size: 16px;
+                    font-weight: 600;
+                    margin-bottom: 8px;
+                }
+                
+                p {
+                    color: rgba(62, 77, 51, 0.9);
+                    font-size: 15px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}
+
+// Адаптивность
+@media (max-width: 992px) {
+    .route-header {
+        padding: 24px;
+        
+        .route-title {
+            font-size: 32px;
+            line-height: 40px;
+        }
+        
+        .route-meta {
+            gap: 16px;
+        }
+    }
+    
+    .detail-section {
+        padding: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hiking-detail {
+        padding: 20px 16px 80px;
+    }
+    
+    .route-header {
+        padding: 20px;
+        
+        .route-title {
+            font-size: 28px;
+            line-height: 36px;
+        }
+        
+        .route-meta {
+            flex-direction: column;
+            gap: 12px;
+        }
+    }
+    
+    .route-image {
+        height: 200px;
+    }
+    
+    .route-details-grid {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .route-header {
+        .route-title {
+            font-size: 24px;
+            line-height: 32px;
+        }
+    }
+    
+    .detail-section {
+        padding: 20px;
+        
+        h2 {
+            font-size: 20px;
+        }
+        
+        &.tips {
+            .tips-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}

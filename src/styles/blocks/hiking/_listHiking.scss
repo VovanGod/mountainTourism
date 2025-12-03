@@ -1,0 +1,220 @@
+.list-hiking {
+    position: relative;
+    border-radius: 16px;
+    padding: 30px 0;
+    background: linear-gradient(180deg, rgba(244, 247, 242, 0.8) 0%, rgba(232, 240, 228, 0.4) 100%);
+    
+    .container {
+        max-width: 1280px;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+}
+
+.hiking-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 24px;
+    margin-top: 30px;
+}
+
+.hiking-card {
+    display: block;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(62, 77, 51, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    
+    &:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 32px rgba(62, 77, 51, 0.15);
+        border-color: rgba(184, 103, 46, 0.3);
+        
+        .details-button {
+            background: rgba(184, 103, 46, 1);
+            color: white;
+            
+            svg {
+                stroke: white;
+                transform: translateX(3px);
+            }
+        }
+    }
+}
+
+.card-image {
+    position: relative;
+    height: 200px;
+    background: linear-gradient(135deg, rgba(184, 103, 46, 0.1), rgba(155, 169, 112, 0.1));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .image-placeholder {
+        opacity: 0.6;
+    }
+    
+    .card-badge {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        background: rgba(255, 255, 255, 0.95);
+        padding: 6px 12px;
+        border-radius: 20px;
+        border: 1px solid rgba(184, 103, 46, 0.3);
+        
+        span {
+            color: rgba(184, 103, 46, 1);
+            font-size: 14px;
+            font-weight: 600;
+        }
+    }
+}
+
+.card-content {
+    padding: 24px;
+}
+
+.card-title {
+    color: rgba(62, 77, 51, 1);
+    font-family: var(--font-title);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    margin-bottom: 12px;
+}
+
+.card-meta {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+    
+    .meta-item {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        color: rgba(87, 103, 76, 1);
+        font-size: 14px;
+        font-weight: 500;
+        
+        svg {
+            flex-shrink: 0;
+        }
+    }
+}
+
+.card-difficulty {
+    margin-bottom: 16px;
+    
+    .difficulty-stars {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        
+        .difficulty-text {
+            margin-left: 8px;
+            color: rgba(184, 103, 46, 1);
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+}
+
+.card-description {
+    color: rgba(62, 77, 51, 0.9);
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.card-footer {
+    .details-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 20px;
+        background: rgba(242, 245, 239, 1);
+        color: rgba(184, 103, 46, 1);
+        border: 1px solid rgba(184, 103, 46, 0.3);
+        border-radius: 12px;
+        font-size: 15px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        
+        svg {
+            transition: transform 0.3s ease;
+        }
+        
+        &:hover {
+            background: rgba(184, 103, 46, 1);
+            color: white;
+            
+            svg {
+                stroke: white;
+                transform: translateX(3px);
+            }
+        }
+    }
+}
+
+// Адаптивность
+@media (max-width: 992px) {
+    .hiking-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .list-hiking {
+        padding: 20px 0 60px;
+    }
+    
+    .hiking-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .card-image {
+        height: 180px;
+    }
+    
+    .card-content {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .list-hiking {
+        padding: 16px 0 60px;
+    }
+    
+    .card-image {
+        height: 160px;
+    }
+    
+    .card-title {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    
+    .card-description {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    .details-button {
+        width: 100%;
+        justify-content: center;
+    }
+}

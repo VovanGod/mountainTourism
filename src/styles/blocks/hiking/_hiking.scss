@@ -1,6 +1,6 @@
 .hiking {
     position: relative;
-    padding: 30px;
+    padding: 30px 0 120px 0;
     min-height: 100vh;
     overflow: hidden;
 
@@ -20,8 +20,9 @@
 
     .filters {
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-between;
         column-gap: 22px;
+        row-gap: 30px;
         flex-wrap: wrap;
         padding: 17px;
 
@@ -36,19 +37,267 @@
     .filter {
         display: flex;
         flex-direction: column;
-        row-gap: 5px;
+        row-gap: 15px;
         align-items: flex-start;
 
-        &-header {
+        &-icon {
             display: flex;
-            column-gap: 8px;
+            column-gap: 12px;
             align-items: center;
             justify-content: flex-start;
 
-            color: rgba(37, 44, 33, 1);
-            font-size: 14px;
+            color: rgba(184, 103, 46, 1);
+            font-size: 16px;
             font-weight: 400;
             line-height: 14px;
         }
+
+        // Кастомный селект
+        .custom-select-wrapper {
+            position: relative;
+            width: 300px;
+        }
+
+        .custom-select {
+            width: 100%;
+            padding: 16px 50px 16px 20px;
+            font-size: 16px;
+            color: rgba(62, 77, 51, 1);
+            background: rgba(242, 245, 239, 1);
+            border: 2px solid rgba(229, 235, 224, 1);
+            border-radius: 14px;
+            outline: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(62, 77, 51, 0.08);
+            font-weight: 500;
+            position: relative;
+            user-select: none;
+            
+            &:hover {
+                border-color: rgba(184, 103, 46, 0.5);
+                box-shadow: 0 4px 12px rgba(184, 103, 46, 0.1);
+            }
+            
+            &.open {
+                border-color: rgba(184, 103, 46, 0.8);
+                box-shadow: 0 4px 16px rgba(184, 103, 46, 0.2);
+                background: rgba(255, 255, 255, 1);
+                border-radius: 14px 14px 0 0;
+                border-bottom-color: rgba(229, 235, 224, 0.5);
+            }
+        }
+
+        .selected-value {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .select-arrow {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: transform 0.3s ease;
+            color: rgba(184, 103, 46, 1);
+            
+            .custom-select.open & {
+                transform: translateY(-50%) rotate(180deg);
+            }
+        }
+
+        // Выпадающее меню
+        .dropdown-menu {
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 1);
+            border: 2px solid rgba(184, 103, 46, 0.8);
+            border-top: none;
+            border-radius: 0 0 14px 14px;
+            box-shadow: 0 8px 24px rgba(62, 77, 51, 0.15);
+            z-index: 1000;
+            max-height: 300px;
+            overflow-y: auto;
+            animation: dropdownAppear 0.2s ease;
+        }
+
+        @keyframes dropdownAppear {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .dropdown-item {
+            padding: 14px 20px;
+            font-size: 15px;
+            color: rgba(62, 77, 51, 1);
+            background: rgba(255, 255, 255, 1);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border-bottom: 1px solid rgba(242, 245, 239, 1);
+            
+            &:last-child {
+                border-bottom: none;
+            }
+            
+            &:hover {
+                background: rgba(242, 245, 239, 0.8);
+                color: rgba(184, 103, 46, 1);
+            }
+            
+            &.selected {
+                background: rgba(184, 103, 46, 0.1);
+                color: rgba(184, 103, 46, 1);
+                font-weight: 600;
+                position: relative;
+                
+                &::after {
+                    content: '✓';
+                    position: absolute;
+                    right: 20px;
+                    color: rgba(184, 103, 46, 1);
+                }
+            }
+        }
+
+        .hidden-select {
+            position: absolute;
+            opacity: 0;
+            pointer-events: none;
+            height: 0;
+            width: 0;
+        }
+
+        // Стили для инпутов
+        .filter-input {
+            width: 300px;
+            padding: 16px 20px;
+            border: 2px solid rgba(229, 235, 224, 1);
+            border-radius: 14px;
+            background: rgba(242, 245, 239, 1);
+            color: rgba(62, 77, 51, 1);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 16px;
+            text-align: left;
+            outline: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(62, 77, 51, 0.08);
+
+            &::placeholder {
+                color: rgba(62, 77, 51, 0.6);
+            }
+
+            &:hover {
+                border-color: rgba(184, 103, 46, 0.5);
+                box-shadow: 0 4px 12px rgba(184, 103, 46, 0.1);
+            }
+
+            &:focus {
+                border-color: rgba(184, 103, 46, 0.8);
+                box-shadow: 0 4px 16px rgba(184, 103, 46, 0.2);
+                background: rgba(255, 255, 255, 1);
+            }
+
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+        }
     }
+}
+
+// Стили для Hiking.jsx
+.header-with-reset {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    
+    .reset-filters-btn {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 16px;
+        background: rgba(242, 245, 239, 1);
+        color: rgba(184, 103, 46, 1);
+        border: 1px solid rgba(184, 103, 46, 0.3);
+        border-radius: 12px;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        
+        svg {
+            width: 14px;
+            height: 14px;
+        }
+        
+        &:hover {
+            background: rgba(184, 103, 46, 0.1);
+            border-color: rgba(184, 103, 46, 0.5);
+        }
+    }
+}
+
+// Обновленные стили для фильтров
+.filter-input-wrapper {
+    position: relative;
+    width: 100%;
+    
+    .input-unit {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: rgba(62, 77, 51, 0.7);
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+
+// Стили для ListHiking.jsx
+.no-results {
+    text-align: center;
+    padding: 60px 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    margin-top: 30px;
+
+    svg {
+        margin: 0 auto;
+    }
+    
+    h3 {
+        color: rgba(62, 77, 51, 1);
+        font-family: var(--font-title);
+        font-size: 24px;
+        margin: 20px 0 10px;
+    }
+    
+    p {
+        color: rgba(87, 103, 76, 1);
+        font-size: 16px;
+    }
+}
+
+// Дополнительный бейдж сложности на картинке
+.difficulty-badge {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    background: rgba(184, 103, 46, 0.9);
+    color: white;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
 }
