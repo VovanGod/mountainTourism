@@ -1,8 +1,3 @@
-:root {
-	background: linear-gradient(45deg, #d7d4d1, #d4f9e3);
-	color: rgba(62, 77, 51, 1);
-}
-
 html {
 	scroll-behavior: smooth;
 }
@@ -11,6 +6,16 @@ html,
 body {
 	max-width: 100vw;
 	font-family: var(--font-main);
+
+	background: linear-gradient(45deg, #c0a593, #fef3c7, #d1fae5);
+	color: rgba(62, 77, 51, 1);
 }
 
 @import "./base/reset.scss";
+
+@import "./blocks/homePage/homePage";
+@import "./blocks/homePage/homeNav";
+
+@import "./blocks/nav/nav";
+
+@import "./blocks/hiking/hiking";
