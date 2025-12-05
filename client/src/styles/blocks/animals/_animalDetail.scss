@@ -1,0 +1,551 @@
+// app/animals/[id]/animal-detail.scss
+.animal-detail {
+	position: relative;
+	padding: 20px 20px 80px;
+	min-height: 100vh;
+	background: linear-gradient(
+		180deg,
+		rgba(244, 247, 242, 0.8) 0%,
+		rgba(232, 240, 228, 0.4) 100%
+	);
+
+	.container {
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+}
+
+/* Кнопка назад - только иконка */
+.back-nav {
+	margin-bottom: 20px;
+
+	.back-button-icon {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 44px;
+		height: 44px;
+		background: rgba(255, 255, 255, 0.8);
+		border-radius: 50%;
+		border: 1px solid rgba(184, 103, 46, 0.2);
+		text-decoration: none;
+		transition: all 0.3s ease;
+		box-shadow: 0 2px 8px rgba(62, 77, 51, 0.1);
+
+		&:hover {
+			background: rgba(255, 255, 255, 1);
+			border-color: rgba(184, 103, 46, 0.4);
+			transform: translateY(-2px);
+			box-shadow: 0 4px 12px rgba(62, 77, 51, 0.15);
+		}
+
+		svg {
+			width: 20px;
+			height: 20px;
+		}
+	}
+}
+
+/* Заголовок */
+.detail-header {
+	margin-bottom: 30px;
+
+	.detail-title {
+		color: rgba(62, 77, 51, 1);
+		font-family: var(--font-title);
+		font-size: 32px;
+		font-weight: 700;
+		line-height: 40px;
+		margin-bottom: 12px;
+	}
+
+	.header-meta {
+		display: flex;
+		align-items: center;
+		gap: 16px;
+		flex-wrap: wrap;
+		margin-top: 16px;
+	}
+}
+
+/* Научное название */
+.scientific-name-large {
+	color: rgba(87, 103, 76, 0.8);
+	font-size: 18px;
+	font-style: italic;
+	margin: 0 0 20px 0;
+	font-weight: 500;
+}
+
+/* Бейдж региона */
+.region-badge {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	padding: 8px 16px;
+	background: rgba(242, 245, 239, 1);
+	border-radius: 12px;
+	color: rgba(87, 103, 76, 1);
+	font-size: 14px;
+	font-weight: 500;
+	border: 1px solid rgba(229, 235, 224, 1);
+}
+
+/* Уровень опасности */
+.danger-badge-large {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	padding: 12px 20px;
+	border-radius: 16px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+
+	.danger-icon {
+		font-size: 20px;
+	}
+
+	.danger-label {
+		font-size: 16px;
+		font-weight: 700;
+	}
+}
+
+/* Тип животного */
+.animal-type-badge-large {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding: 12px 20px;
+	background: rgba(242, 245, 239, 1);
+	border-radius: 16px;
+	border: 1px solid rgba(229, 235, 224, 1);
+
+	.animal-type-icon-large {
+		font-size: 24px;
+	}
+
+	.animal-type-content {
+		.animal-type-label-small {
+			color: rgba(87, 103, 76, 1);
+			font-size: 12px;
+			font-weight: 500;
+			text-transform: uppercase;
+			letter-spacing: 0.5px;
+		}
+
+		.animal-type-label-large {
+			color: rgba(62, 77, 51, 1);
+			font-size: 16px;
+			font-weight: 600;
+		}
+	}
+}
+
+.danger-container,
+.type-container {
+	display: inline-block;
+}
+
+/* Изображение */
+.image-section {
+	margin-bottom: 30px;
+
+	.detail-image {
+		height: 280px;
+		background: linear-gradient(
+			135deg,
+			rgba(184, 103, 46, 0.1),
+			rgba(155, 169, 112, 0.1)
+		);
+		border-radius: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		overflow: hidden;
+		position: relative;
+
+		.image-placeholder {
+			opacity: 0.6;
+		}
+	}
+}
+
+/* Статистика */
+.basic-info-section {
+	margin-bottom: 30px;
+
+	.stats-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+		gap: 16px;
+	}
+
+	.stat-card {
+		display: flex;
+		align-items: center;
+		gap: 16px;
+		padding: 20px;
+		background: rgba(255, 255, 255, 0.95);
+		border-radius: 16px;
+		box-shadow: 0 4px 16px rgba(62, 77, 51, 0.08);
+		border: 1px solid rgba(229, 235, 224, 1);
+
+		.stat-icon {
+			flex-shrink: 0;
+			width: 40px;
+			height: 40px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: rgba(184, 103, 46, 0.1);
+			border-radius: 12px;
+
+			svg {
+				width: 20px;
+				height: 20px;
+			}
+		}
+
+		.stat-content {
+			.stat-value {
+				color: rgba(87, 103, 76, 1);
+				font-size: 14px;
+				font-weight: 500;
+				margin-bottom: 4px;
+			}
+
+			.stat-label {
+				color: rgba(62, 77, 51, 1);
+				font-size: 16px;
+				font-weight: 600;
+				line-height: 22px;
+			}
+		}
+	}
+}
+
+/* Общие стили для секций */
+.description-section,
+.behavior-section,
+.actions-section,
+.facts-section {
+	background: rgba(255, 255, 255, 0.95);
+	border-radius: 16px;
+	padding: 32px;
+	margin-bottom: 24px;
+	box-shadow: 0 4px 16px rgba(62, 77, 51, 0.08);
+	border: 1px solid rgba(229, 235, 224, 1);
+
+	.section-title {
+		color: rgba(62, 77, 51, 1);
+		font-family: var(--font-title);
+		font-size: 20px;
+		font-weight: 700;
+		margin: 0 0 8px 0;
+		display: flex;
+		align-items: center;
+		gap: 10px;
+
+		svg {
+			flex-shrink: 0;
+		}
+	}
+
+	.section-subtitle {
+		color: rgba(87, 103, 76, 1);
+		font-size: 14px;
+		font-weight: 500;
+		margin-bottom: 20px;
+		text-transform: uppercase;
+		letter-spacing: 0.5px;
+	}
+}
+
+/* Описание */
+.description-section {
+	.description-content {
+		color: rgba(62, 77, 51, 0.9);
+		font-size: 16px;
+		line-height: 26px;
+
+		p {
+			margin: 0 0 16px 0;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+/* Поведение */
+.behavior-section {
+	.behavior-content {
+		color: rgba(62, 77, 51, 0.9);
+		font-size: 16px;
+		line-height: 26px;
+	}
+}
+
+/* Действия при встрече */
+.actions-section {
+	.actions-list {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+
+		.action-item {
+			display: flex;
+			gap: 16px;
+			padding: 20px;
+			background: rgba(255, 243, 224, 0.5);
+			border-radius: 12px;
+			border: 1px solid rgba(255, 224, 178, 0.8);
+			transition: transform 0.2s ease;
+
+			&:hover {
+				transform: translateX(4px);
+				background: rgba(255, 243, 224, 0.8);
+			}
+
+			.action-number {
+				flex-shrink: 0;
+				width: 32px;
+				height: 32px;
+				background: rgba(184, 103, 46, 1);
+				color: white;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-weight: 700;
+				font-size: 16px;
+			}
+
+			.action-content {
+				.action-text {
+					color: rgba(62, 77, 51, 1);
+					font-size: 15px;
+					font-weight: 500;
+					line-height: 22px;
+				}
+			}
+		}
+	}
+}
+
+/* Интересные факты */
+.facts-section {
+	.facts-list {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+		gap: 12px;
+
+		.fact-item {
+			display: flex;
+			align-items: flex-start;
+			gap: 12px;
+			padding: 16px;
+			background: rgba(242, 245, 239, 0.8);
+			border-radius: 12px;
+			border: 1px solid rgba(229, 235, 224, 0.8);
+			transition: transform 0.2s ease;
+
+			&:hover {
+				transform: translateY(-2px);
+				background: rgba(242, 245, 239, 1);
+			}
+
+			.fact-icon {
+				flex-shrink: 0;
+				width: 18px;
+				height: 18px;
+				margin-top: 2px;
+			}
+
+			.fact-text {
+				color: rgba(62, 77, 51, 1);
+				font-size: 15px;
+				line-height: 22px;
+			}
+		}
+	}
+}
+
+/* Важный блок */
+.important-section {
+	background: rgba(255, 235, 235, 0.9);
+	border: 2px solid rgba(255, 182, 182, 0.5);
+	border-radius: 16px;
+	padding: 24px;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	backdrop-filter: blur(10px);
+	margin-top: 40px;
+
+	.important-icon {
+		flex-shrink: 0;
+		width: 56px;
+		height: 56px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: rgba(255, 182, 182, 0.3);
+		border-radius: 50%;
+
+		svg {
+			width: 24px;
+			height: 24px;
+		}
+	}
+
+	.important-content {
+		.important-title {
+			color: rgba(183, 28, 28, 1);
+			font-family: var(--font-title);
+			font-size: 24px;
+			font-weight: 700;
+			margin: 0 0 8px 0;
+		}
+
+		.important-text {
+			color: rgba(183, 28, 28, 0.9);
+			font-size: 16px;
+			line-height: 24px;
+			margin: 0;
+			font-weight: 500;
+		}
+	}
+}
+
+/* Загрузка и ошибки */
+.loading-spinner {
+	position: absolute;
+	top: 320px;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	padding: 100px 20px;
+
+	.spinner {
+		width: 50px;
+		height: 50px;
+		border: 4px solid rgba(184, 103, 46, 0.2);
+		border-top: 4px solid rgba(184, 103, 46, 1);
+		border-radius: 50%;
+		animation: spin 1s linear infinite;
+		margin: 0 auto 20px;
+	}
+
+	p {
+		color: rgba(62, 77, 51, 1);
+		font-size: 16px;
+	}
+}
+
+.error-message {
+	text-align: center;
+	padding: 100px 20px;
+
+	h2 {
+		color: rgba(237, 44, 44, 1);
+		margin-bottom: 20px;
+	}
+
+	.back-button {
+		display: inline-block;
+		margin-top: 20px;
+		padding: 12px 24px;
+		background: rgba(184, 103, 46, 1);
+		color: white;
+		text-decoration: none;
+		border-radius: 12px;
+		font-weight: 500;
+
+		&:hover {
+			background: rgba(184, 103, 46, 0.9);
+		}
+	}
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+	.animal-detail {
+		padding: 16px 16px 80px;
+	}
+
+	.detail-header {
+		.detail-title {
+			font-size: 28px;
+			line-height: 36px;
+		}
+	}
+
+	.image-section {
+		.detail-image {
+			height: 200px;
+		}
+	}
+
+	.important-section {
+		flex-direction: column;
+		text-align: center;
+		gap: 16px;
+		padding: 20px;
+	}
+
+	.facts-section .facts-list {
+		grid-template-columns: 1fr;
+	}
+
+	.description-section,
+	.behavior-section,
+	.actions-section,
+	.facts-section {
+		padding: 24px;
+
+		.section-title {
+			font-size: 18px;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.detail-header {
+		.detail-title {
+			font-size: 24px;
+			line-height: 32px;
+		}
+	}
+
+	.danger-badge-large,
+	.animal-type-badge-large {
+		padding: 10px 16px;
+	}
+
+	.stat-card {
+		padding: 16px;
+
+		.stat-content {
+			.stat-value {
+				font-size: 13px;
+			}
+
+			.stat-label {
+				font-size: 14px;
+			}
+		}
+	}
+}
