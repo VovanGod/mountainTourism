@@ -28,15 +28,6 @@ const navItems = [
 		link: "/safety",
 		additionalClass: "safety-item",
 	},
-	// {
-	//   id: 4,
-	//   title: "Избранное",
-	//   description: "Ваши сохраненные маршруты",
-	//   icon: "/homePage/favourites.svg",
-	//   alt: "favourites",
-	//   link: "/favourites",
-	//   additionalClass: "favourites-item"
-	// }
 ];
 
 const HomeNav = () => {

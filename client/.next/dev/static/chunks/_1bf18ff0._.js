@@ -54,29 +54,29 @@ const Nav = ({ idActive })=>{
                                 alt: item.alt
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/Nav.jsx",
-                                lineNumber: 45,
+                                lineNumber: 44,
                                 columnNumber: 8
                             }, ("TURBOPACK compile-time value", void 0)),
                             item.text
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/components/Nav.jsx",
-                        lineNumber: 41,
+                        lineNumber: 40,
                         columnNumber: 7
                     }, ("TURBOPACK compile-time value", void 0))
                 }, item.id, false, {
                     fileName: "[project]/src/app/components/Nav.jsx",
-                    lineNumber: 40,
+                    lineNumber: 39,
                     columnNumber: 6
                 }, ("TURBOPACK compile-time value", void 0)))
         }, void 0, false, {
             fileName: "[project]/src/app/components/Nav.jsx",
-            lineNumber: 38,
+            lineNumber: 37,
             columnNumber: 4
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/src/app/components/Nav.jsx",
-        lineNumber: 37,
+        lineNumber: 36,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0));
 };
@@ -91,7 +91,6 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 "[project]/src/app/components/hiking/ListHiking.jsx [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
-// components/hiking/ListHiking.jsx
 __turbopack_context__.s([
     "default",
     ()=>ListHiking
@@ -101,7 +100,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 "use client";
 ;
 ;
-// Компонент для отображения звезд сложности
 const DifficultyStars = ({ level })=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "difficulty-stars",
@@ -120,12 +118,12 @@ const DifficultyStars = ({ level })=>{
                         points: "12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/hiking/ListHiking.jsx",
-                        lineNumber: 23,
+                        lineNumber: 20,
                         columnNumber: 6
                     }, ("TURBOPACK compile-time value", void 0))
                 }, index, false, {
                     fileName: "[project]/src/app/components/hiking/ListHiking.jsx",
-                    lineNumber: 11,
+                    lineNumber: 8,
                     columnNumber: 5
                 }, ("TURBOPACK compile-time value", void 0))),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -139,19 +137,18 @@ const DifficultyStars = ({ level })=>{
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/hiking/ListHiking.jsx",
-                lineNumber: 26,
+                lineNumber: 23,
                 columnNumber: 4
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/components/hiking/ListHiking.jsx",
-        lineNumber: 9,
+        lineNumber: 6,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0));
 };
 _c = DifficultyStars;
 function ListHiking({ routes = [] }) {
-    // Если маршрутов нет после фильтрации
     if (routes.length === 0) {
         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "list-hiking",
@@ -177,7 +174,7 @@ function ListHiking({ routes = [] }) {
                                     r: "10"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/components/hiking/ListHiking.jsx",
-                                    lineNumber: 55,
+                                    lineNumber: 51,
                                     columnNumber: 8
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -187,7 +184,7 @@ function ListHiking({ routes = [] }) {
                                     y2: "12"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/components/hiking/ListHiking.jsx",
-                                    lineNumber: 56,
+                                    lineNumber: 52,
                                     columnNumber: 8
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -197,43 +194,43 @@ function ListHiking({ routes = [] }) {
                                     y2: "16"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/components/hiking/ListHiking.jsx",
-                                    lineNumber: 57,
+                                    lineNumber: 53,
                                     columnNumber: 8
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/components/hiking/ListHiking.jsx",
-                            lineNumber: 44,
+                            lineNumber: 40,
                             columnNumber: 7
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                             children: "Маршруты не найдены"
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/hiking/ListHiking.jsx",
-                            lineNumber: 59,
+                            lineNumber: 55,
                             columnNumber: 7
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             children: "Попробуйте изменить параметры фильтрации"
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/hiking/ListHiking.jsx",
-                            lineNumber: 60,
+                            lineNumber: 56,
                             columnNumber: 7
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/components/hiking/ListHiking.jsx",
-                    lineNumber: 43,
+                    lineNumber: 39,
                     columnNumber: 6
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/components/hiking/ListHiking.jsx",
-                lineNumber: 42,
+                lineNumber: 38,
                 columnNumber: 5
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/components/hiking/ListHiking.jsx",
-            lineNumber: 41,
+            lineNumber: 37,
             columnNumber: 4
         }, this);
     }
@@ -266,17 +263,17 @@ function ListHiking({ routes = [] }) {
                                                 d: "m8 3 4 8 5-5 5 15H2L8 3z"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/components/hiking/ListHiking.jsx",
-                                                lineNumber: 90,
+                                                lineNumber: 86,
                                                 columnNumber: 11
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/components/hiking/ListHiking.jsx",
-                                            lineNumber: 79,
+                                            lineNumber: 75,
                                             columnNumber: 10
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/hiking/ListHiking.jsx",
-                                        lineNumber: 78,
+                                        lineNumber: 74,
                                         columnNumber: 9
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -288,12 +285,12 @@ function ListHiking({ routes = [] }) {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/components/hiking/ListHiking.jsx",
-                                            lineNumber: 94,
+                                            lineNumber: 90,
                                             columnNumber: 10
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/hiking/ListHiking.jsx",
-                                        lineNumber: 93,
+                                        lineNumber: 89,
                                         columnNumber: 9
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -304,13 +301,13 @@ function ListHiking({ routes = [] }) {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/components/hiking/ListHiking.jsx",
-                                        lineNumber: 97,
+                                        lineNumber: 92,
                                         columnNumber: 9
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/components/hiking/ListHiking.jsx",
-                                lineNumber: 77,
+                                lineNumber: 73,
                                 columnNumber: 8
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -321,7 +318,7 @@ function ListHiking({ routes = [] }) {
                                         children: route.title
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/hiking/ListHiking.jsx",
-                                        lineNumber: 101,
+                                        lineNumber: 96,
                                         columnNumber: 9
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -347,20 +344,20 @@ function ListHiking({ routes = [] }) {
                                                                 r: "10"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/components/hiking/ListHiking.jsx",
-                                                                lineNumber: 116,
+                                                                lineNumber: 111,
                                                                 columnNumber: 12
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("polyline", {
                                                                 points: "12 6 12 12 16 14"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/components/hiking/ListHiking.jsx",
-                                                                lineNumber: 117,
+                                                                lineNumber: 112,
                                                                 columnNumber: 12
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/components/hiking/ListHiking.jsx",
-                                                        lineNumber: 105,
+                                                        lineNumber: 100,
                                                         columnNumber: 11
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -370,13 +367,13 @@ function ListHiking({ routes = [] }) {
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/components/hiking/ListHiking.jsx",
-                                                        lineNumber: 119,
+                                                        lineNumber: 114,
                                                         columnNumber: 11
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/components/hiking/ListHiking.jsx",
-                                                lineNumber: 104,
+                                                lineNumber: 99,
                                                 columnNumber: 10
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -397,53 +394,53 @@ function ListHiking({ routes = [] }) {
                                                                 d: "M12 2v20"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/components/hiking/ListHiking.jsx",
-                                                                lineNumber: 134,
+                                                                lineNumber: 129,
                                                                 columnNumber: 12
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                                                                 d: "m17 5-5-3-5 3"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/components/hiking/ListHiking.jsx",
-                                                                lineNumber: 135,
+                                                                lineNumber: 130,
                                                                 columnNumber: 12
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                                                                 d: "m17 19-5 3-5-3"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/components/hiking/ListHiking.jsx",
-                                                                lineNumber: 136,
+                                                                lineNumber: 131,
                                                                 columnNumber: 12
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                                                                 d: "M2 12h20"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/components/hiking/ListHiking.jsx",
-                                                                lineNumber: 137,
+                                                                lineNumber: 132,
                                                                 columnNumber: 12
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/components/hiking/ListHiking.jsx",
-                                                        lineNumber: 123,
+                                                        lineNumber: 118,
                                                         columnNumber: 11
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         children: route.elevation
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/components/hiking/ListHiking.jsx",
-                                                        lineNumber: 139,
+                                                        lineNumber: 134,
                                                         columnNumber: 11
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/components/hiking/ListHiking.jsx",
-                                                lineNumber: 122,
+                                                lineNumber: 117,
                                                 columnNumber: 10
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/components/hiking/ListHiking.jsx",
-                                        lineNumber: 103,
+                                        lineNumber: 98,
                                         columnNumber: 9
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -452,12 +449,12 @@ function ListHiking({ routes = [] }) {
                                             level: route.difficulty
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/components/hiking/ListHiking.jsx",
-                                            lineNumber: 144,
+                                            lineNumber: 139,
                                             columnNumber: 10
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/hiking/ListHiking.jsx",
-                                        lineNumber: 143,
+                                        lineNumber: 138,
                                         columnNumber: 9
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -465,7 +462,7 @@ function ListHiking({ routes = [] }) {
                                         children: route.description
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/hiking/ListHiking.jsx",
-                                        lineNumber: 147,
+                                        lineNumber: 142,
                                         columnNumber: 9
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -488,50 +485,50 @@ function ListHiking({ routes = [] }) {
                                                         points: "9 18 15 12 9 6"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/components/hiking/ListHiking.jsx",
-                                                        lineNumber: 163,
+                                                        lineNumber: 158,
                                                         columnNumber: 12
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/components/hiking/ListHiking.jsx",
-                                                    lineNumber: 152,
+                                                    lineNumber: 147,
                                                     columnNumber: 11
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/components/hiking/ListHiking.jsx",
-                                            lineNumber: 150,
+                                            lineNumber: 145,
                                             columnNumber: 10
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/hiking/ListHiking.jsx",
-                                        lineNumber: 149,
+                                        lineNumber: 144,
                                         columnNumber: 9
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/components/hiking/ListHiking.jsx",
-                                lineNumber: 100,
+                                lineNumber: 95,
                                 columnNumber: 8
                             }, this)
                         ]
                     }, route.id, true, {
                         fileName: "[project]/src/app/components/hiking/ListHiking.jsx",
-                        lineNumber: 72,
+                        lineNumber: 68,
                         columnNumber: 7
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/src/app/components/hiking/ListHiking.jsx",
-                lineNumber: 70,
+                lineNumber: 66,
                 columnNumber: 5
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/components/hiking/ListHiking.jsx",
-            lineNumber: 69,
+            lineNumber: 65,
             columnNumber: 4
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/app/components/hiking/ListHiking.jsx",
-        lineNumber: 68,
+        lineNumber: 64,
         columnNumber: 3
     }, this);
 }
@@ -562,15 +559,12 @@ var _s = __turbopack_context__.k.signature();
 ;
 const Hiking = ()=>{
     _s();
-    // Состояния для фильтров
     const [filters, setFilters] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])({
         difficulty: "all",
         maxDistance: "",
         maxDuration: ""
     });
-    // Состояние для отфильтрованных маршрутов
     const [filteredRoutes, setFilteredRoutes] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
-    // Состояние для кастомного селекта
     const [isOpen, setIsOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [error, setError] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
@@ -603,12 +597,10 @@ const Hiking = ()=>{
             label: "Эксперт (5 звезд)"
         }
     ];
-    // Функция для загрузки маршрутов с сервера
     const fetchRoutes = async (currentFilters = filters)=>{
         setLoading(true);
         setError(null);
         try {
-            // Собираем параметры запроса
             const params = new URLSearchParams();
             if (currentFilters.difficulty !== "all") {
                 params.append("difficulty", currentFilters.difficulty);
@@ -619,13 +611,11 @@ const Hiking = ()=>{
             if (currentFilters.maxDuration) {
                 params.append("maxDuration", currentFilters.maxDuration);
             }
-            // Запрос к нашему серверу
             const response = await fetch(`http://localhost:5001/api/routes?${params}`);
             if (!response.ok) {
                 throw new Error(`Ошибка сервера: ${response.status}`);
             }
             const data = await response.json();
-            // Преобразуем данные из БД в формат для компонента
             const formattedData = data.map((route)=>({
                     id: route.id,
                     title: route.title,
@@ -653,20 +643,17 @@ const Hiking = ()=>{
             setLoading(false);
         }
     };
-    // Загружаем маршруты при первом рендере
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "Hiking.useEffect": ()=>{
             fetchRoutes();
         }
     }["Hiking.useEffect"], []);
-    // Функция обработки изменения фильтров с сохранением фокуса
     const handleFilterChange = (filterName, value, inputRef = null)=>{
         const newFilters = {
             ...filters,
             [filterName]: value
         };
         setFilters(newFilters);
-        // Сохраняем фокус на инпуте после обновления
         if (inputRef && inputRef.current) {
             setTimeout(()=>{
                 inputRef.current.focus();
@@ -674,24 +661,18 @@ const Hiking = ()=>{
         }
         fetchRoutes(newFilters);
     };
-    // Обработчик для числовых инпутов
     const handleNumericInputChange = (e, filterName, inputRef, maxValue)=>{
         const value = e.target.value;
-        // Разрешаем только цифры, точку и запятую
         if (value === "" || /^[\d.,]*$/.test(value)) {
-            // Заменяем запятые на точки для корректного парсинга
             const normalizedValue = value.replace(",", ".");
-            // Проверяем, что значение не превышает максимальное
             const numValue = parseFloat(normalizedValue);
             if (normalizedValue === "" || numValue >= 0 && numValue <= maxValue) {
-                // Ограничиваем длину
                 if (value.length <= 6) {
                     handleFilterChange(filterName, normalizedValue, inputRef);
                 }
             }
         }
     };
-    // Функция сброса всех фильтров
     const handleResetFilters = ()=>{
         const resetFilters = {
             difficulty: "all",
@@ -701,7 +682,6 @@ const Hiking = ()=>{
         setFilters(resetFilters);
         fetchRoutes(resetFilters);
     };
-    // Закрытие селекта при клике вне его
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "Hiking.useEffect": ()=>{
             const handleClickOutside = {
@@ -733,7 +713,7 @@ const Hiking = ()=>{
                                     children: "Маршруты"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/hiking/page.jsx",
-                                    lineNumber: 170,
+                                    lineNumber: 137,
                                     columnNumber: 7
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 (filters.difficulty !== "all" || filters.maxDistance || filters.maxDuration) && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -756,21 +736,21 @@ const Hiking = ()=>{
                                                     d: "M3 6h18"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/hiking/page.jsx",
-                                                    lineNumber: 190,
+                                                    lineNumber: 157,
                                                     columnNumber: 10
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                                                     d: "M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/hiking/page.jsx",
-                                                    lineNumber: 191,
+                                                    lineNumber: 158,
                                                     columnNumber: 10
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                                                     d: "M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/hiking/page.jsx",
-                                                    lineNumber: 192,
+                                                    lineNumber: 159,
                                                     columnNumber: 10
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -780,7 +760,7 @@ const Hiking = ()=>{
                                                     y2: "17"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/hiking/page.jsx",
-                                                    lineNumber: 193,
+                                                    lineNumber: 160,
                                                     columnNumber: 10
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -790,26 +770,26 @@ const Hiking = ()=>{
                                                     y2: "17"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/hiking/page.jsx",
-                                                    lineNumber: 194,
+                                                    lineNumber: 161,
                                                     columnNumber: 10
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/hiking/page.jsx",
-                                            lineNumber: 179,
+                                            lineNumber: 146,
                                             columnNumber: 9
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         "Сбросить фильтры"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/hiking/page.jsx",
-                                    lineNumber: 174,
+                                    lineNumber: 141,
                                     columnNumber: 8
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/hiking/page.jsx",
-                            lineNumber: 169,
+                            lineNumber: 136,
                             columnNumber: 6
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -837,30 +817,30 @@ const Hiking = ()=>{
                                                             d: "m8 3 4 8 5-5 5 15H2L8 3z"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/hiking/page.jsx",
-                                                            lineNumber: 217,
+                                                            lineNumber: 183,
                                                             columnNumber: 11
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/hiking/page.jsx",
-                                                        lineNumber: 206,
+                                                        lineNumber: 172,
                                                         columnNumber: 10
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         children: "Сложность"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/hiking/page.jsx",
-                                                        lineNumber: 219,
+                                                        lineNumber: 185,
                                                         columnNumber: 10
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/hiking/page.jsx",
-                                                lineNumber: 205,
+                                                lineNumber: 171,
                                                 columnNumber: 9
                                             }, ("TURBOPACK compile-time value", void 0))
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/hiking/page.jsx",
-                                            lineNumber: 204,
+                                            lineNumber: 170,
                                             columnNumber: 8
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -876,7 +856,7 @@ const Hiking = ()=>{
                                                             children: selectedLabel
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/hiking/page.jsx",
-                                                            lineNumber: 230,
+                                                            lineNumber: 195,
                                                             columnNumber: 10
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -895,23 +875,23 @@ const Hiking = ()=>{
                                                                     points: "6 9 12 15 18 9"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/hiking/page.jsx",
-                                                                    lineNumber: 243,
+                                                                    lineNumber: 208,
                                                                     columnNumber: 12
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/hiking/page.jsx",
-                                                                lineNumber: 232,
+                                                                lineNumber: 197,
                                                                 columnNumber: 11
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/hiking/page.jsx",
-                                                            lineNumber: 231,
+                                                            lineNumber: 196,
                                                             columnNumber: 10
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/hiking/page.jsx",
-                                                    lineNumber: 224,
+                                                    lineNumber: 189,
                                                     columnNumber: 9
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 isOpen && !loading && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -925,24 +905,24 @@ const Hiking = ()=>{
                                                             children: option.label
                                                         }, option.value, false, {
                                                             fileName: "[project]/src/app/hiking/page.jsx",
-                                                            lineNumber: 251,
+                                                            lineNumber: 215,
                                                             columnNumber: 12
                                                         }, ("TURBOPACK compile-time value", void 0)))
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/hiking/page.jsx",
-                                                    lineNumber: 249,
+                                                    lineNumber: 213,
                                                     columnNumber: 10
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/hiking/page.jsx",
-                                            lineNumber: 223,
+                                            lineNumber: 188,
                                             columnNumber: 8
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/hiking/page.jsx",
-                                    lineNumber: 203,
+                                    lineNumber: 169,
                                     columnNumber: 7
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -968,59 +948,59 @@ const Hiking = ()=>{
                                                                 d: "M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/hiking/page.jsx",
-                                                                lineNumber: 284,
+                                                                lineNumber: 247,
                                                                 columnNumber: 11
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                                                                 d: "m14.5 12.5 2-2"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/hiking/page.jsx",
-                                                                lineNumber: 285,
+                                                                lineNumber: 248,
                                                                 columnNumber: 11
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                                                                 d: "m11.5 9.5 2-2"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/hiking/page.jsx",
-                                                                lineNumber: 286,
+                                                                lineNumber: 249,
                                                                 columnNumber: 11
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                                                                 d: "m8.5 6.5 2-2"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/hiking/page.jsx",
-                                                                lineNumber: 287,
+                                                                lineNumber: 250,
                                                                 columnNumber: 11
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                                                                 d: "m17.5 15.5 2-2"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/hiking/page.jsx",
-                                                                lineNumber: 288,
+                                                                lineNumber: 251,
                                                                 columnNumber: 11
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/hiking/page.jsx",
-                                                        lineNumber: 273,
+                                                        lineNumber: 236,
                                                         columnNumber: 10
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         children: "Макс. расстояние, км"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/hiking/page.jsx",
-                                                        lineNumber: 290,
+                                                        lineNumber: 253,
                                                         columnNumber: 10
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/hiking/page.jsx",
-                                                lineNumber: 272,
+                                                lineNumber: 235,
                                                 columnNumber: 9
                                             }, ("TURBOPACK compile-time value", void 0))
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/hiking/page.jsx",
-                                            lineNumber: 271,
+                                            lineNumber: 234,
                                             columnNumber: 8
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1044,7 +1024,7 @@ const Hiking = ()=>{
                                                     disabled: loading
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/hiking/page.jsx",
-                                                    lineNumber: 294,
+                                                    lineNumber: 257,
                                                     columnNumber: 9
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1052,19 +1032,19 @@ const Hiking = ()=>{
                                                     children: "км"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/hiking/page.jsx",
-                                                    lineNumber: 321,
+                                                    lineNumber: 284,
                                                     columnNumber: 9
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/hiking/page.jsx",
-                                            lineNumber: 293,
+                                            lineNumber: 256,
                                             columnNumber: 8
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/hiking/page.jsx",
-                                    lineNumber: 270,
+                                    lineNumber: 233,
                                     columnNumber: 7
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1092,38 +1072,38 @@ const Hiking = ()=>{
                                                                 r: "10"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/hiking/page.jsx",
-                                                                lineNumber: 340,
+                                                                lineNumber: 302,
                                                                 columnNumber: 11
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("polyline", {
                                                                 points: "12 6 12 12 16 14"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/hiking/page.jsx",
-                                                                lineNumber: 341,
+                                                                lineNumber: 303,
                                                                 columnNumber: 11
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/hiking/page.jsx",
-                                                        lineNumber: 329,
+                                                        lineNumber: 291,
                                                         columnNumber: 10
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         children: "Макс. время, ч"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/hiking/page.jsx",
-                                                        lineNumber: 343,
+                                                        lineNumber: 305,
                                                         columnNumber: 10
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/hiking/page.jsx",
-                                                lineNumber: 328,
+                                                lineNumber: 290,
                                                 columnNumber: 9
                                             }, ("TURBOPACK compile-time value", void 0))
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/hiking/page.jsx",
-                                            lineNumber: 327,
+                                            lineNumber: 289,
                                             columnNumber: 8
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1147,7 +1127,7 @@ const Hiking = ()=>{
                                                     disabled: loading
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/hiking/page.jsx",
-                                                    lineNumber: 347,
+                                                    lineNumber: 309,
                                                     columnNumber: 9
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1155,25 +1135,25 @@ const Hiking = ()=>{
                                                     children: "ч"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/hiking/page.jsx",
-                                                    lineNumber: 374,
+                                                    lineNumber: 336,
                                                     columnNumber: 9
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/hiking/page.jsx",
-                                            lineNumber: 346,
+                                            lineNumber: 308,
                                             columnNumber: 8
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/hiking/page.jsx",
-                                    lineNumber: 326,
+                                    lineNumber: 288,
                                     columnNumber: 7
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/hiking/page.jsx",
-                            lineNumber: 201,
+                            lineNumber: 168,
                             columnNumber: 6
                         }, ("TURBOPACK compile-time value", void 0)),
                         error && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1196,7 +1176,7 @@ const Hiking = ()=>{
                                             r: "10"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/hiking/page.jsx",
-                                            lineNumber: 393,
+                                            lineNumber: 354,
                                             columnNumber: 9
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -1206,7 +1186,7 @@ const Hiking = ()=>{
                                             y2: "12"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/hiking/page.jsx",
-                                            lineNumber: 394,
+                                            lineNumber: 355,
                                             columnNumber: 9
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -1216,20 +1196,20 @@ const Hiking = ()=>{
                                             y2: "16"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/hiking/page.jsx",
-                                            lineNumber: 395,
+                                            lineNumber: 356,
                                             columnNumber: 9
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/hiking/page.jsx",
-                                    lineNumber: 382,
+                                    lineNumber: 343,
                                     columnNumber: 8
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 error
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/hiking/page.jsx",
-                            lineNumber: 381,
+                            lineNumber: 342,
                             columnNumber: 7
                         }, ("TURBOPACK compile-time value", void 0)),
                         loading ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1239,46 +1219,44 @@ const Hiking = ()=>{
                                     className: "loading-spinner"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/hiking/page.jsx",
-                                    lineNumber: 403,
+                                    lineNumber: 364,
                                     columnNumber: 8
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     children: "Загрузка маршрутов..."
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/hiking/page.jsx",
-                                    lineNumber: 404,
+                                    lineNumber: 365,
                                     columnNumber: 8
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/hiking/page.jsx",
-                            lineNumber: 402,
+                            lineNumber: 363,
                             columnNumber: 7
-                        }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hiking$2f$ListHiking$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                routes: filteredRoutes
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/hiking/page.jsx",
-                                lineNumber: 408,
-                                columnNumber: 8
-                            }, ("TURBOPACK compile-time value", void 0))
-                        }, void 0, false)
+                        }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$hiking$2f$ListHiking$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            routes: filteredRoutes
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/hiking/page.jsx",
+                            lineNumber: 368,
+                            columnNumber: 7
+                        }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/hiking/page.jsx",
-                    lineNumber: 168,
+                    lineNumber: 135,
                     columnNumber: 5
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/src/app/hiking/page.jsx",
-                lineNumber: 167,
+                lineNumber: 134,
                 columnNumber: 4
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$Nav$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 idActive: 2
             }, void 0, false, {
                 fileName: "[project]/src/app/hiking/page.jsx",
-                lineNumber: 414,
+                lineNumber: 372,
                 columnNumber: 4
             }, ("TURBOPACK compile-time value", void 0))
         ]

@@ -4,7 +4,6 @@ import { useParams } from "next/navigation";
 import Link from "next/link";
 import Nav from "@/app/components/Nav";
 
-// Компонент для отображения звезд сложности
 const DifficultyStars = ({ level }) => {
 	return (
 		<div className="difficulty-stars">
@@ -38,7 +37,6 @@ const DifficultyStars = ({ level }) => {
 	);
 };
 
-// Компонент для типа маршрута
 const RouteTypeBadge = ({ type }) => {
 	const getTypeInfo = (type) => {
 		switch (type) {
@@ -145,10 +143,10 @@ const HikingDetailPage = () => {
 				<div className="hiking-detail error">
 					<div className="container">
 						<div className="error-message">
-							<h2>❌ Ошибка</h2>
+							<h2>Ошибка</h2>
 							<p>{error || "Маршрут не найден"}</p>
 							<Link href="/hiking" className="back-button">
-								← Вернуться к списку маршрутов
+								Вернуться к списку маршрутов
 							</Link>
 						</div>
 					</div>
@@ -158,7 +156,6 @@ const HikingDetailPage = () => {
 		);
 	}
 
-	// Преобразуем массивы из PostgreSQL в JavaScript массивы
 	const equipmentList = Array.isArray(route.equipment)
 		? route.equipment
 		: route.equipment
@@ -175,7 +172,6 @@ const HikingDetailPage = () => {
 		<>
 			<div className="hiking-detail">
 				<div className="container">
-					{/* Кнопка назад - только иконка */}
 					<div className="back-nav">
 						<Link
 							href="/hiking"
@@ -198,7 +194,6 @@ const HikingDetailPage = () => {
 						</Link>
 					</div>
 
-					{/* Заголовок */}
 					<div className="detail-header">
 						<h1 className="detail-title">{route.title}</h1>
 						<div className="header-meta">
@@ -227,9 +222,7 @@ const HikingDetailPage = () => {
 						</div>
 					</div>
 
-					{/* Основной контент */}
 					<div className="detail-content">
-						{/* Блок с основной статистикой */}
 						<div className="stats-section">
 							<div className="stats-grid">
 								<div className="stat-card">
@@ -339,7 +332,6 @@ const HikingDetailPage = () => {
 							</div>
 						</div>
 
-						{/* Блок с изображением */}
 						<div className="image-section">
 							<div className="detail-image">
 								<div className="image-placeholder">
@@ -360,14 +352,12 @@ const HikingDetailPage = () => {
 							</div>
 						</div>
 
-						{/* Тип маршрута */}
 						{route.route_type && (
 							<div className="route-type-section">
 								<RouteTypeBadge type={route.route_type} />
 							</div>
 						)}
 
-						{/* Подробное описание */}
 						{route.full_description && (
 							<div className="description-section">
 								<h2 className="section-title">
@@ -393,7 +383,6 @@ const HikingDetailPage = () => {
 							</div>
 						)}
 
-						{/* Снаряжение */}
 						{equipmentList.length > 0 && (
 							<div className="equipment-section">
 								<h2 className="section-title">
@@ -439,7 +428,6 @@ const HikingDetailPage = () => {
 							</div>
 						)}
 
-						{/* Как добраться */}
 						{route.how_to_get && (
 							<div className="how-to-get-section">
 								<h2 className="section-title">
@@ -466,7 +454,6 @@ const HikingDetailPage = () => {
 							</div>
 						)}
 
-						{/* Достопримечательности */}
 						{attractionsList.length > 0 && (
 							<div className="attractions-section">
 								<h2 className="section-title">

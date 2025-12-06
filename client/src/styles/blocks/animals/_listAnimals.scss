@@ -1,4 +1,3 @@
-// app/components/animals/ListAnimals.scss
 .list-animals {
 	position: relative;
 	border-radius: 16px;
@@ -190,7 +189,6 @@
 	}
 }
 
-/* Стили для "Животные не найдены" */
 .no-animals-found {
 	padding: 60px 0;
 	min-height: 60vh;
@@ -273,11 +271,58 @@
 	z-index: 1;
 }
 
-// Адаптивность
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
+	.animals-grid {
+		grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+		gap: 22px;
+	}
+}
+
+@media (max-width: 1024px) {
 	.animals-grid {
 		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 		gap: 20px;
+	}
+
+	.animal-card .card-image {
+		height: 180px;
+	}
+
+	.animal-card .card-content {
+		padding: 20px;
+	}
+}
+
+@media (max-width: 900px) {
+	.list-animals {
+		padding: 25px 0 80px;
+	}
+
+	.animals-grid {
+		grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+		gap: 20px;
+	}
+
+	.animal-card .card-image {
+		height: 170px;
+	}
+
+	.animal-card .card-title {
+		font-size: 19px;
+		line-height: 26px;
+	}
+
+	.animal-card .card-description {
+		font-size: 14px;
+		line-height: 21px;
+	}
+
+	.no-animals-title {
+		font-size: 28px;
+	}
+
+	.no-animals-description {
+		font-size: 16px;
 	}
 }
 
@@ -287,8 +332,55 @@
 	}
 
 	.animals-grid {
+		grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+		gap: 18px;
+	}
+
+	.animal-card .card-image {
+		height: 160px;
+	}
+
+	.animal-card .card-title {
+		font-size: 18px;
+		line-height: 24px;
+	}
+
+	.animal-card .card-meta {
+		flex-wrap: wrap;
+		gap: 12px;
+
+		.meta-item {
+			font-size: 13px;
+		}
+	}
+
+	.animal-card .card-footer .details-button {
+		padding: 9px 18px;
+		font-size: 14px;
+	}
+
+	.no-animals-found {
+		padding: 40px 0;
+		min-height: 50vh;
+	}
+
+	.no-animals-content {
+		padding: 30px;
+	}
+
+	.no-animals-title {
+		font-size: 24px;
+	}
+
+	.no-animals-description {
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 600px) {
+	.animals-grid {
 		grid-template-columns: 1fr;
-		max-width: 500px;
+		max-width: 400px;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -299,6 +391,15 @@
 
 	.animal-card .card-content {
 		padding: 20px;
+	}
+
+	.no-animals-title {
+		font-size: 22px;
+	}
+
+	.no-animals-description {
+		font-size: 14px;
+		max-width: 350px;
 	}
 }
 
@@ -321,8 +422,123 @@
 		line-height: 20px;
 	}
 
-	.details-button {
+	.animal-card .card-footer .details-button {
 		width: 100%;
 		justify-content: center;
+	}
+
+	.no-animals-found {
+		padding: 30px 0;
+		min-height: 40vh;
+		border-radius: 20px;
+	}
+
+	.no-animals-content {
+		padding: 24px;
+	}
+
+	.no-animals-icon {
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-height: 480px) and (orientation: landscape) {
+	.list-animals {
+		padding: 15px 0 60px;
+	}
+
+	.animals-grid {
+		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+		gap: 15px;
+	}
+
+	.animal-card .card-image {
+		height: 140px;
+	}
+
+	.animal-card .card-content {
+		padding: 16px;
+	}
+
+	.animal-card .card-title {
+		font-size: 16px;
+		line-height: 22px;
+		margin-bottom: 6px;
+	}
+
+	.scientific-name {
+		font-size: 13px;
+		margin-bottom: 12px;
+	}
+
+	.animal-card .card-description {
+		font-size: 13px;
+		line-height: 18px;
+		margin-bottom: 15px;
+		-webkit-line-clamp: 2;
+	}
+
+	.no-animals-found {
+		padding: 20px 0;
+		min-height: 35vh;
+	}
+
+	.no-animals-title {
+		font-size: 20px;
+		margin-bottom: 12px;
+	}
+
+	.no-animals-description {
+		font-size: 13px;
+		line-height: 1.5;
+	}
+}
+
+@media (max-width: 360px) {
+	.list-animals {
+		padding: 12px 0 60px;
+	}
+
+	.animal-card .card-image {
+		height: 150px;
+	}
+
+	.animal-card .card-content {
+		padding: 16px;
+	}
+
+	.animal-card .card-title {
+		font-size: 17px;
+		line-height: 22px;
+	}
+
+	.animal-card .card-meta {
+		gap: 10px;
+
+		.meta-item {
+			font-size: 12px;
+		}
+	}
+
+	.animal-card .card-description {
+		font-size: 13px;
+		line-height: 19px;
+	}
+
+	.no-animals-found {
+		padding: 20px 0;
+		min-height: 35vh;
+	}
+
+	.no-animals-content {
+		padding: 20px;
+	}
+
+	.no-animals-title {
+		font-size: 20px;
+	}
+
+	.no-animals-description {
+		font-size: 13px;
 	}
 }

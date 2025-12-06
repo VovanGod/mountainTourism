@@ -4,16 +4,12 @@ import ListAnimals from "../components/animals/ListAnimals";
 import Nav from "../components/Nav";
 
 const Animals = () => {
-	// Состояния для фильтров
 	const [filters, setFilters] = useState({
 		danger_level: "all",
 		animal_type: "all",
 	});
 
-	// Состояние для отфильтрованных животных
 	const [filteredAnimals, setFilteredAnimals] = useState([]);
-
-	// Состояние для кастомных селектов
 	const [isDangerOpen, setIsDangerOpen] = useState(false);
 	const [isTypeOpen, setIsTypeOpen] = useState(false);
 	const [loading, setLoading] = useState(false);
@@ -40,13 +36,11 @@ const Animals = () => {
 		{ value: "fish", label: "Рыбы" },
 	];
 
-	// Функция для загрузки животных с сервера
 	const fetchAnimals = async (currentFilters = filters) => {
 		setLoading(true);
 		setError(null);
 
 		try {
-			// Собираем параметры запроса
 			const params = new URLSearchParams();
 			if (currentFilters.danger_level !== "all") {
 				params.append("danger_level", currentFilters.danger_level);
@@ -55,7 +49,6 @@ const Animals = () => {
 				params.append("animal_type", currentFilters.animal_type);
 			}
 
-			// Запрос к нашему серверу
 			const response = await fetch(
 				`http://localhost:5001/api/animals?${params}`
 			);
@@ -66,7 +59,6 @@ const Animals = () => {
 
 			const data = await response.json();
 
-			// Преобразуем данные из БД в формат для компонента
 			const formattedData = data.map((animal) => ({
 				id: animal.id,
 				title: animal.title,
@@ -98,12 +90,10 @@ const Animals = () => {
 		}
 	};
 
-	// Загружаем животных при первом рендере
 	useEffect(() => {
 		fetchAnimals();
 	}, []);
 
-	// Функция обработки изменения фильтров
 	const handleFilterChange = (filterName, value) => {
 		const newFilters = {
 			...filters,
@@ -113,7 +103,6 @@ const Animals = () => {
 		fetchAnimals(newFilters);
 	};
 
-	// Функция сброса всех фильтров
 	const handleResetFilters = () => {
 		const resetFilters = {
 			danger_level: "all",
@@ -123,7 +112,6 @@ const Animals = () => {
 		fetchAnimals(resetFilters);
 	};
 
-	// Закрытие селектов при клике вне их
 	useEffect(() => {
 		const handleClickOutside = (event) => {
 			if (
@@ -187,7 +175,6 @@ const Animals = () => {
 						)}
 					</div>
 
-					{/* Информационный блок */}
 					<div className="info-block">
 						<div className="info-icon">
 							<svg
@@ -216,7 +203,6 @@ const Animals = () => {
 					</div>
 
 					<div className="filters">
-						{/* Фильтр уровня опасности */}
 						<div className="filter">
 							<div className="filter-header">
 								<div className="filter-icon">
@@ -287,7 +273,6 @@ const Animals = () => {
 							</div>
 						</div>
 
-						{/* Фильтр типа животного */}
 						<div className="filter">
 							<div className="filter-header">
 								<div className="filter-icon">
@@ -355,7 +340,6 @@ const Animals = () => {
 						</div>
 					</div>
 
-					{/* Показать сообщение об ошибке если есть */}
 					{error && (
 						<div className="filter-error-message">
 							<svg

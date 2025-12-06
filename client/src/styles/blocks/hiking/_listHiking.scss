@@ -197,11 +197,50 @@
 	}
 }
 
-// Адаптивность
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
+	.hiking-grid {
+		grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+		gap: 22px;
+	}
+}
+
+@media (max-width: 1024px) {
 	.hiking-grid {
 		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 		gap: 20px;
+	}
+
+	.card-image {
+		height: 180px;
+	}
+
+	.card-content {
+		padding: 20px;
+	}
+}
+
+@media (max-width: 900px) {
+	.list-hiking {
+		padding: 25px 0 80px;
+	}
+
+	.hiking-grid {
+		grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+		gap: 20px;
+	}
+
+	.card-image {
+		height: 170px;
+	}
+
+	.card-title {
+		font-size: 19px;
+		line-height: 26px;
+	}
+
+	.card-description {
+		font-size: 14px;
+		line-height: 21px;
 	}
 }
 
@@ -211,8 +250,38 @@
 	}
 
 	.hiking-grid {
+		grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+		gap: 18px;
+	}
+
+	.card-image {
+		height: 160px;
+	}
+
+	.card-title {
+		font-size: 18px;
+		line-height: 24px;
+	}
+
+	.card-meta {
+		flex-wrap: wrap;
+		gap: 12px;
+
+		.meta-item {
+			font-size: 13px;
+		}
+	}
+
+	.card-footer .details-button {
+		padding: 9px 18px;
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 600px) {
+	.hiking-grid {
 		grid-template-columns: 1fr;
-		max-width: 500px;
+		max-width: 400px;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -245,8 +314,84 @@
 		line-height: 20px;
 	}
 
-	.details-button {
+	.card-footer .details-button {
 		width: 100%;
 		justify-content: center;
+	}
+
+	.no-results {
+		padding: 40px 16px;
+
+		h3 {
+			font-size: 20px;
+		}
+
+		p {
+			font-size: 14px;
+		}
+	}
+}
+
+@media (max-height: 480px) and (orientation: landscape) {
+	.list-hiking {
+		padding: 15px 0 60px;
+	}
+
+	.hiking-grid {
+		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+		gap: 15px;
+	}
+
+	.card-image {
+		height: 140px;
+	}
+
+	.card-content {
+		padding: 16px;
+	}
+
+	.card-title {
+		font-size: 16px;
+		line-height: 22px;
+		margin-bottom: 8px;
+	}
+
+	.card-description {
+		font-size: 13px;
+		line-height: 18px;
+		margin-bottom: 15px;
+		-webkit-line-clamp: 2;
+	}
+}
+
+@media (max-width: 360px) {
+	.list-hiking {
+		padding: 12px 0 60px;
+	}
+
+	.card-image {
+		height: 150px;
+	}
+
+	.card-content {
+		padding: 16px;
+	}
+
+	.card-title {
+		font-size: 17px;
+		line-height: 22px;
+	}
+
+	.card-meta {
+		gap: 10px;
+
+		.meta-item {
+			font-size: 12px;
+		}
+	}
+
+	.card-description {
+		font-size: 13px;
+		line-height: 19px;
 	}
 }

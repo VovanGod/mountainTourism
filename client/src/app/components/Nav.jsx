@@ -30,7 +30,6 @@ const Nav = ({ idActive }) => {
 			alt: "safety",
 			text: "Безопасность",
 		},
-		// { id: 5, href: "/favourites", icon: "/homePage/favourites.svg", alt: "favourites", text: "Избранное" },
 	];
 
 	return (

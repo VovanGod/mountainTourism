@@ -1,5 +1,4 @@
 "use client";
-
 import Link from "next/link";
 
 const DangerBadge = ({ level }) => {
@@ -54,7 +53,6 @@ const DangerBadge = ({ level }) => {
 	);
 };
 
-// Компонент для отображения типа животного
 const AnimalTypeBadge = ({ type }) => {
 	const getTypeInfo = (type) => {
 		switch (type) {
@@ -88,7 +86,6 @@ const AnimalTypeBadge = ({ type }) => {
 };
 
 export default function ListAnimals({ animals = [] }) {
-	// Если животных нет после фильтрации
 	if (animals.length === 0) {
 		return (
 			<div className="no-animals-found">
@@ -174,7 +171,6 @@ export default function ListAnimals({ animals = [] }) {
 									</svg>
 								</div>
 
-								{/* Бейдж уровня опасности справа вверху */}
 								<div className="danger-level-badge">
 									<DangerBadge level={animal.danger_level} />
 								</div>
@@ -183,7 +179,6 @@ export default function ListAnimals({ animals = [] }) {
 							<div className="card-content">
 								<h3 className="card-title">{animal.title}</h3>
 
-								{/* Научное название */}
 								{animal.scientific_name && (
 									<p className="scientific-name">{animal.scientific_name}</p>
 								)}

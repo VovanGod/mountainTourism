@@ -63,11 +63,10 @@ const DangerBadge = ({ level })=>{
         children: info.label
     }, void 0, false, {
         fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-        lineNumber: 44,
+        lineNumber: 43,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0));
 };
-// Компонент для отображения типа животного
 const AnimalTypeBadge = ({ type })=>{
     const getTypeInfo = (type)=>{
         switch(type){
@@ -122,7 +121,7 @@ const AnimalTypeBadge = ({ type })=>{
                 children: info.icon
             }, void 0, false, {
                 fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-                lineNumber: 84,
+                lineNumber: 82,
                 columnNumber: 4
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -130,18 +129,17 @@ const AnimalTypeBadge = ({ type })=>{
                 children: info.label
             }, void 0, false, {
                 fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-                lineNumber: 85,
+                lineNumber: 83,
                 columnNumber: 4
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-        lineNumber: 83,
+        lineNumber: 81,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0));
 };
 function ListAnimals({ animals = [] }) {
-    // Если животных нет после фильтрации
     if (animals.length === 0) {
         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "no-animals-found",
@@ -167,7 +165,7 @@ function ListAnimals({ animals = [] }) {
                                         d: "M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-                                        lineNumber: 109,
+                                        lineNumber: 106,
                                         columnNumber: 9
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -177,7 +175,7 @@ function ListAnimals({ animals = [] }) {
                                         y2: "13"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-                                        lineNumber: 110,
+                                        lineNumber: 107,
                                         columnNumber: 9
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -187,18 +185,18 @@ function ListAnimals({ animals = [] }) {
                                         y2: "17"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-                                        lineNumber: 111,
+                                        lineNumber: 108,
                                         columnNumber: 9
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-                                lineNumber: 98,
+                                lineNumber: 95,
                                 columnNumber: 8
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-                            lineNumber: 97,
+                            lineNumber: 94,
                             columnNumber: 7
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -209,7 +207,7 @@ function ListAnimals({ animals = [] }) {
                                     children: "Животные не найдены"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-                                    lineNumber: 116,
+                                    lineNumber: 113,
                                     columnNumber: 8
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -217,13 +215,13 @@ function ListAnimals({ animals = [] }) {
                                     children: "По вашему запросу не найдено ни одного животного. Попробуйте изменить параметры фильтрации."
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-                                    lineNumber: 117,
+                                    lineNumber: 114,
                                     columnNumber: 8
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-                            lineNumber: 115,
+                            lineNumber: 112,
                             columnNumber: 7
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -243,55 +241,55 @@ function ListAnimals({ animals = [] }) {
                                         d: "M3 4h7a4 4 0 0 1 4 4 4 4 0 0 1 4-4h7"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-                                        lineNumber: 135,
+                                        lineNumber: 132,
                                         columnNumber: 9
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                                         d: "M9 8v12"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-                                        lineNumber: 136,
+                                        lineNumber: 133,
                                         columnNumber: 9
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                                         d: "M15 8v12"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-                                        lineNumber: 137,
+                                        lineNumber: 134,
                                         columnNumber: 9
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                                         d: "M4 20h16"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-                                        lineNumber: 138,
+                                        lineNumber: 135,
                                         columnNumber: 9
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-                                lineNumber: 124,
+                                lineNumber: 121,
                                 columnNumber: 8
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-                            lineNumber: 123,
+                            lineNumber: 120,
                             columnNumber: 7
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-                    lineNumber: 96,
+                    lineNumber: 93,
                     columnNumber: 6
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-                lineNumber: 95,
+                lineNumber: 92,
                 columnNumber: 5
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-            lineNumber: 94,
+            lineNumber: 91,
             columnNumber: 4
         }, this);
     }
@@ -325,39 +323,39 @@ function ListAnimals({ animals = [] }) {
                                                     d: "M3 4h7a4 4 0 0 1 4 4 4 4 0 0 1 4-4h7"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-                                                    lineNumber: 170,
+                                                    lineNumber: 167,
                                                     columnNumber: 11
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                                                     d: "M9 8v12"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-                                                    lineNumber: 171,
+                                                    lineNumber: 168,
                                                     columnNumber: 11
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                                                     d: "M15 8v12"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-                                                    lineNumber: 172,
+                                                    lineNumber: 169,
                                                     columnNumber: 11
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                                                     d: "M4 20h16"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-                                                    lineNumber: 173,
+                                                    lineNumber: 170,
                                                     columnNumber: 11
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-                                            lineNumber: 159,
+                                            lineNumber: 156,
                                             columnNumber: 10
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-                                        lineNumber: 158,
+                                        lineNumber: 155,
                                         columnNumber: 9
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -366,18 +364,18 @@ function ListAnimals({ animals = [] }) {
                                             level: animal.danger_level
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-                                            lineNumber: 179,
+                                            lineNumber: 175,
                                             columnNumber: 10
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-                                        lineNumber: 178,
+                                        lineNumber: 174,
                                         columnNumber: 9
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-                                lineNumber: 157,
+                                lineNumber: 154,
                                 columnNumber: 8
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -388,7 +386,7 @@ function ListAnimals({ animals = [] }) {
                                         children: animal.title
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-                                        lineNumber: 184,
+                                        lineNumber: 180,
                                         columnNumber: 9
                                     }, this),
                                     animal.scientific_name && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -396,7 +394,7 @@ function ListAnimals({ animals = [] }) {
                                         children: animal.scientific_name
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-                                        lineNumber: 188,
+                                        lineNumber: 183,
                                         columnNumber: 10
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -406,7 +404,7 @@ function ListAnimals({ animals = [] }) {
                                                 type: animal.animal_type
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-                                                lineNumber: 192,
+                                                lineNumber: 187,
                                                 columnNumber: 10
                                             }, this),
                                             animal.conservation_status && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -429,7 +427,7 @@ function ListAnimals({ animals = [] }) {
                                                                 r: "10"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-                                                                lineNumber: 207,
+                                                                lineNumber: 202,
                                                                 columnNumber: 13
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -439,7 +437,7 @@ function ListAnimals({ animals = [] }) {
                                                                 y2: "12"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-                                                                lineNumber: 208,
+                                                                lineNumber: 203,
                                                                 columnNumber: 13
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -449,32 +447,32 @@ function ListAnimals({ animals = [] }) {
                                                                 y2: "8"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-                                                                lineNumber: 209,
+                                                                lineNumber: 204,
                                                                 columnNumber: 13
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-                                                        lineNumber: 196,
+                                                        lineNumber: 191,
                                                         columnNumber: 12
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         children: animal.conservation_status
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-                                                        lineNumber: 211,
+                                                        lineNumber: 206,
                                                         columnNumber: 12
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-                                                lineNumber: 195,
+                                                lineNumber: 190,
                                                 columnNumber: 11
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-                                        lineNumber: 191,
+                                        lineNumber: 186,
                                         columnNumber: 9
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -482,7 +480,7 @@ function ListAnimals({ animals = [] }) {
                                         children: animal.short_description
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-                                        lineNumber: 216,
+                                        lineNumber: 211,
                                         columnNumber: 9
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -505,50 +503,50 @@ function ListAnimals({ animals = [] }) {
                                                         points: "9 18 15 12 9 6"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-                                                        lineNumber: 232,
+                                                        lineNumber: 227,
                                                         columnNumber: 12
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-                                                    lineNumber: 221,
+                                                    lineNumber: 216,
                                                     columnNumber: 11
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-                                            lineNumber: 219,
+                                            lineNumber: 214,
                                             columnNumber: 10
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-                                        lineNumber: 218,
+                                        lineNumber: 213,
                                         columnNumber: 9
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-                                lineNumber: 183,
+                                lineNumber: 179,
                                 columnNumber: 8
                             }, this)
                         ]
                     }, animal.id, true, {
                         fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-                        lineNumber: 152,
+                        lineNumber: 149,
                         columnNumber: 7
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-                lineNumber: 150,
+                lineNumber: 147,
                 columnNumber: 5
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-            lineNumber: 149,
+            lineNumber: 146,
             columnNumber: 4
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/app/components/animals/ListAnimals.jsx",
-        lineNumber: 148,
+        lineNumber: 145,
         columnNumber: 3
     }, this);
 }
@@ -608,29 +606,29 @@ const Nav = ({ idActive })=>{
                                 alt: item.alt
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/Nav.jsx",
-                                lineNumber: 45,
+                                lineNumber: 44,
                                 columnNumber: 8
                             }, ("TURBOPACK compile-time value", void 0)),
                             item.text
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/components/Nav.jsx",
-                        lineNumber: 41,
+                        lineNumber: 40,
                         columnNumber: 7
                     }, ("TURBOPACK compile-time value", void 0))
                 }, item.id, false, {
                     fileName: "[project]/src/app/components/Nav.jsx",
-                    lineNumber: 40,
+                    lineNumber: 39,
                     columnNumber: 6
                 }, ("TURBOPACK compile-time value", void 0)))
         }, void 0, false, {
             fileName: "[project]/src/app/components/Nav.jsx",
-            lineNumber: 38,
+            lineNumber: 37,
             columnNumber: 4
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/src/app/components/Nav.jsx",
-        lineNumber: 37,
+        lineNumber: 36,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0));
 };
@@ -653,14 +651,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$
 ;
 ;
 const Animals = ()=>{
-    // Состояния для фильтров
     const [filters, setFilters] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])({
         danger_level: "all",
         animal_type: "all"
     });
-    // Состояние для отфильтрованных животных
     const [filteredAnimals, setFilteredAnimals] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([]);
-    // Состояние для кастомных селектов
     const [isDangerOpen, setIsDangerOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const [isTypeOpen, setIsTypeOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
@@ -723,12 +718,10 @@ const Animals = ()=>{
             label: "Рыбы"
         }
     ];
-    // Функция для загрузки животных с сервера
     const fetchAnimals = async (currentFilters = filters)=>{
         setLoading(true);
         setError(null);
         try {
-            // Собираем параметры запроса
             const params = new URLSearchParams();
             if (currentFilters.danger_level !== "all") {
                 params.append("danger_level", currentFilters.danger_level);
@@ -736,13 +729,11 @@ const Animals = ()=>{
             if (currentFilters.animal_type !== "all") {
                 params.append("animal_type", currentFilters.animal_type);
             }
-            // Запрос к нашему серверу
             const response = await fetch(`http://localhost:5001/api/animals?${params}`);
             if (!response.ok) {
                 throw new Error(`Ошибка сервера: ${response.status}`);
             }
             const data = await response.json();
-            // Преобразуем данные из БД в формат для компонента
             const formattedData = data.map((animal)=>({
                     id: animal.id,
                     title: animal.title,
@@ -770,11 +761,9 @@ const Animals = ()=>{
             setLoading(false);
         }
     };
-    // Загружаем животных при первом рендере
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         fetchAnimals();
     }, []);
-    // Функция обработки изменения фильтров
     const handleFilterChange = (filterName, value)=>{
         const newFilters = {
             ...filters,
@@ -783,7 +772,6 @@ const Animals = ()=>{
         setFilters(newFilters);
         fetchAnimals(newFilters);
     };
-    // Функция сброса всех фильтров
     const handleResetFilters = ()=>{
         const resetFilters = {
             danger_level: "all",
@@ -792,7 +780,6 @@ const Animals = ()=>{
         setFilters(resetFilters);
         fetchAnimals(resetFilters);
     };
-    // Закрытие селектов при клике вне их
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         const handleClickOutside = (event)=>{
             if (dangerSelectRef.current && !dangerSelectRef.current.contains(event.target)) {
@@ -822,7 +809,7 @@ const Animals = ()=>{
                                     children: "Животные"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/animals/page.jsx",
-                                    lineNumber: 160,
+                                    lineNumber: 148,
                                     columnNumber: 7
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 (filters.danger_level !== "all" || filters.animal_type !== "all") && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -845,21 +832,21 @@ const Animals = ()=>{
                                                     d: "M3 6h18"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/animals/page.jsx",
-                                                    lineNumber: 179,
+                                                    lineNumber: 167,
                                                     columnNumber: 10
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                                                     d: "M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/animals/page.jsx",
-                                                    lineNumber: 180,
+                                                    lineNumber: 168,
                                                     columnNumber: 10
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                                                     d: "M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/animals/page.jsx",
-                                                    lineNumber: 181,
+                                                    lineNumber: 169,
                                                     columnNumber: 10
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -869,7 +856,7 @@ const Animals = ()=>{
                                                     y2: "17"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/animals/page.jsx",
-                                                    lineNumber: 182,
+                                                    lineNumber: 170,
                                                     columnNumber: 10
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -879,26 +866,26 @@ const Animals = ()=>{
                                                     y2: "17"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/animals/page.jsx",
-                                                    lineNumber: 183,
+                                                    lineNumber: 171,
                                                     columnNumber: 10
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/animals/page.jsx",
-                                            lineNumber: 168,
+                                            lineNumber: 156,
                                             columnNumber: 9
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         "Сбросить фильтры"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/animals/page.jsx",
-                                    lineNumber: 163,
+                                    lineNumber: 151,
                                     columnNumber: 8
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/animals/page.jsx",
-                            lineNumber: 159,
+                            lineNumber: 147,
                             columnNumber: 6
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -923,7 +910,7 @@ const Animals = ()=>{
                                                 r: "10"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/animals/page.jsx",
-                                                lineNumber: 204,
+                                                lineNumber: 191,
                                                 columnNumber: 9
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -933,7 +920,7 @@ const Animals = ()=>{
                                                 y2: "12"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/animals/page.jsx",
-                                                lineNumber: 205,
+                                                lineNumber: 192,
                                                 columnNumber: 9
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -943,18 +930,18 @@ const Animals = ()=>{
                                                 y2: "8"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/animals/page.jsx",
-                                                lineNumber: 206,
+                                                lineNumber: 193,
                                                 columnNumber: 9
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/animals/page.jsx",
-                                        lineNumber: 193,
+                                        lineNumber: 180,
                                         columnNumber: 8
                                     }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/animals/page.jsx",
-                                    lineNumber: 192,
+                                    lineNumber: 179,
                                     columnNumber: 7
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -964,26 +951,26 @@ const Animals = ()=>{
                                             children: "Изучите животных, с которыми можете встретиться в походе"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/animals/page.jsx",
-                                            lineNumber: 210,
+                                            lineNumber: 197,
                                             columnNumber: 8
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             children: "Знание их поведения поможет избежать опасных ситуаций и сделает ваше путешествие безопаснее"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/animals/page.jsx",
-                                            lineNumber: 211,
+                                            lineNumber: 198,
                                             columnNumber: 8
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/animals/page.jsx",
-                                    lineNumber: 209,
+                                    lineNumber: 196,
                                     columnNumber: 7
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/animals/page.jsx",
-                            lineNumber: 191,
+                            lineNumber: 178,
                             columnNumber: 6
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1014,7 +1001,7 @@ const Animals = ()=>{
                                                                 r: "10"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/animals/page.jsx",
-                                                                lineNumber: 234,
+                                                                lineNumber: 220,
                                                                 columnNumber: 11
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -1024,7 +1011,7 @@ const Animals = ()=>{
                                                                 y2: "12"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/animals/page.jsx",
-                                                                lineNumber: 235,
+                                                                lineNumber: 221,
                                                                 columnNumber: 11
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -1034,31 +1021,31 @@ const Animals = ()=>{
                                                                 y2: "16"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/animals/page.jsx",
-                                                                lineNumber: 236,
+                                                                lineNumber: 222,
                                                                 columnNumber: 11
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/animals/page.jsx",
-                                                        lineNumber: 223,
+                                                        lineNumber: 209,
                                                         columnNumber: 10
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         children: "Уровень опасности"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/animals/page.jsx",
-                                                        lineNumber: 238,
+                                                        lineNumber: 224,
                                                         columnNumber: 10
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/animals/page.jsx",
-                                                lineNumber: 222,
+                                                lineNumber: 208,
                                                 columnNumber: 9
                                             }, ("TURBOPACK compile-time value", void 0))
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/animals/page.jsx",
-                                            lineNumber: 221,
+                                            lineNumber: 207,
                                             columnNumber: 8
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1074,7 +1061,7 @@ const Animals = ()=>{
                                                             children: selectedDangerLabel
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/animals/page.jsx",
-                                                            lineNumber: 249,
+                                                            lineNumber: 235,
                                                             columnNumber: 10
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1093,23 +1080,23 @@ const Animals = ()=>{
                                                                     points: "6 9 12 15 18 9"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/animals/page.jsx",
-                                                                    lineNumber: 262,
+                                                                    lineNumber: 248,
                                                                     columnNumber: 12
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/animals/page.jsx",
-                                                                lineNumber: 251,
+                                                                lineNumber: 237,
                                                                 columnNumber: 11
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/animals/page.jsx",
-                                                            lineNumber: 250,
+                                                            lineNumber: 236,
                                                             columnNumber: 10
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/animals/page.jsx",
-                                                    lineNumber: 243,
+                                                    lineNumber: 229,
                                                     columnNumber: 9
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 isDangerOpen && !loading && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1123,24 +1110,24 @@ const Animals = ()=>{
                                                             children: option.label
                                                         }, option.value, false, {
                                                             fileName: "[project]/src/app/animals/page.jsx",
-                                                            lineNumber: 270,
+                                                            lineNumber: 256,
                                                             columnNumber: 12
                                                         }, ("TURBOPACK compile-time value", void 0)))
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/animals/page.jsx",
-                                                    lineNumber: 268,
+                                                    lineNumber: 254,
                                                     columnNumber: 10
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/animals/page.jsx",
-                                            lineNumber: 242,
+                                            lineNumber: 228,
                                             columnNumber: 8
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/animals/page.jsx",
-                                    lineNumber: 220,
+                                    lineNumber: 206,
                                     columnNumber: 7
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1165,30 +1152,30 @@ const Animals = ()=>{
                                                             d: "M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/animals/page.jsx",
-                                                            lineNumber: 305,
+                                                            lineNumber: 290,
                                                             columnNumber: 11
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/animals/page.jsx",
-                                                        lineNumber: 294,
+                                                        lineNumber: 279,
                                                         columnNumber: 10
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         children: "Тип животного"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/animals/page.jsx",
-                                                        lineNumber: 307,
+                                                        lineNumber: 292,
                                                         columnNumber: 10
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/animals/page.jsx",
-                                                lineNumber: 293,
+                                                lineNumber: 278,
                                                 columnNumber: 9
                                             }, ("TURBOPACK compile-time value", void 0))
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/animals/page.jsx",
-                                            lineNumber: 292,
+                                            lineNumber: 277,
                                             columnNumber: 8
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1204,7 +1191,7 @@ const Animals = ()=>{
                                                             children: selectedTypeLabel
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/animals/page.jsx",
-                                                            lineNumber: 318,
+                                                            lineNumber: 303,
                                                             columnNumber: 10
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1223,23 +1210,23 @@ const Animals = ()=>{
                                                                     points: "6 9 12 15 18 9"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/animals/page.jsx",
-                                                                    lineNumber: 331,
+                                                                    lineNumber: 316,
                                                                     columnNumber: 12
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/animals/page.jsx",
-                                                                lineNumber: 320,
+                                                                lineNumber: 305,
                                                                 columnNumber: 11
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/animals/page.jsx",
-                                                            lineNumber: 319,
+                                                            lineNumber: 304,
                                                             columnNumber: 10
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/animals/page.jsx",
-                                                    lineNumber: 312,
+                                                    lineNumber: 297,
                                                     columnNumber: 9
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 isTypeOpen && !loading && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1253,30 +1240,30 @@ const Animals = ()=>{
                                                             children: option.label
                                                         }, option.value, false, {
                                                             fileName: "[project]/src/app/animals/page.jsx",
-                                                            lineNumber: 339,
+                                                            lineNumber: 324,
                                                             columnNumber: 12
                                                         }, ("TURBOPACK compile-time value", void 0)))
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/animals/page.jsx",
-                                                    lineNumber: 337,
+                                                    lineNumber: 322,
                                                     columnNumber: 10
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/animals/page.jsx",
-                                            lineNumber: 311,
+                                            lineNumber: 296,
                                             columnNumber: 8
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/animals/page.jsx",
-                                    lineNumber: 291,
+                                    lineNumber: 276,
                                     columnNumber: 7
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/animals/page.jsx",
-                            lineNumber: 218,
+                            lineNumber: 205,
                             columnNumber: 6
                         }, ("TURBOPACK compile-time value", void 0)),
                         error && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1299,7 +1286,7 @@ const Animals = ()=>{
                                             r: "10"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/animals/page.jsx",
-                                            lineNumber: 372,
+                                            lineNumber: 356,
                                             columnNumber: 9
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -1309,7 +1296,7 @@ const Animals = ()=>{
                                             y2: "12"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/animals/page.jsx",
-                                            lineNumber: 373,
+                                            lineNumber: 357,
                                             columnNumber: 9
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -1319,45 +1306,45 @@ const Animals = ()=>{
                                             y2: "16"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/animals/page.jsx",
-                                            lineNumber: 374,
+                                            lineNumber: 358,
                                             columnNumber: 9
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/animals/page.jsx",
-                                    lineNumber: 361,
+                                    lineNumber: 345,
                                     columnNumber: 8
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 error
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/animals/page.jsx",
-                            lineNumber: 360,
+                            lineNumber: 344,
                             columnNumber: 7
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$animals$2f$ListAnimals$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                             animals: filteredAnimals
                         }, void 0, false, {
                             fileName: "[project]/src/app/animals/page.jsx",
-                            lineNumber: 380,
+                            lineNumber: 364,
                             columnNumber: 6
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/animals/page.jsx",
-                    lineNumber: 158,
+                    lineNumber: 146,
                     columnNumber: 5
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/src/app/animals/page.jsx",
-                lineNumber: 157,
+                lineNumber: 145,
                 columnNumber: 4
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$Nav$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                 idActive: 3
             }, void 0, false, {
                 fileName: "[project]/src/app/animals/page.jsx",
-                lineNumber: 384,
+                lineNumber: 368,
                 columnNumber: 4
             }, ("TURBOPACK compile-time value", void 0))
         ]

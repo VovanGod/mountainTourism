@@ -1,9 +1,6 @@
-// components/hiking/ListHiking.jsx
 "use client";
-
 import Link from "next/link";
 
-// Компонент для отображения звезд сложности
 const DifficultyStars = ({ level }) => {
 	return (
 		<div className="difficulty-stars">
@@ -35,7 +32,6 @@ const DifficultyStars = ({ level }) => {
 };
 
 export default function ListHiking({ routes = [] }) {
-	// Если маршрутов нет после фильтрации
 	if (routes.length === 0) {
 		return (
 			<div className="list-hiking">
@@ -93,7 +89,6 @@ export default function ListHiking({ routes = [] }) {
 								<div className="card-badge">
 									<span>{route.distance_km} км</span>
 								</div>
-								{/* Бейдж сложности */}
 								<div className="difficulty-badge">{route.difficulty}/5</div>
 							</div>
 

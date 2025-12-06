@@ -4,7 +4,6 @@ import { useParams } from "next/navigation";
 import Link from "next/link";
 import Nav from "@/app/components/Nav";
 
-// Компонент для отображения уровня опасности
 const DangerBadge = ({ level }) => {
 	const getDangerInfo = (level) => {
 		switch (level) {
@@ -63,7 +62,6 @@ const DangerBadge = ({ level }) => {
 	);
 };
 
-// Компонент для отображения типа животного
 const AnimalTypeBadge = ({ type }) => {
 	const getTypeInfo = (type) => {
 		switch (type) {
@@ -171,7 +169,6 @@ const AnimalDetailPage = () => {
 		);
 	}
 
-	// Преобразуем массивы из PostgreSQL в JavaScript массивы
 	const meetingActions = Array.isArray(animal.meeting_actions)
 		? animal.meeting_actions
 		: animal.meeting_actions
@@ -188,7 +185,6 @@ const AnimalDetailPage = () => {
 		<>
 			<div className="animal-detail">
 				<div className="container">
-					{/* Кнопка назад - только иконка */}
 					<div className="back-nav">
 						<Link
 							href="/animals"
@@ -211,7 +207,6 @@ const AnimalDetailPage = () => {
 						</Link>
 					</div>
 
-					{/* Заголовок */}
 					<div className="detail-header">
 						<h1 className="detail-title">{animal.title}</h1>
 						{animal.scientific_name && (
@@ -247,9 +242,7 @@ const AnimalDetailPage = () => {
 						</div>
 					</div>
 
-					{/* Основной контент */}
 					<div className="detail-content">
-						{/* Изображение */}
 						<div className="image-section">
 							<div className="detail-image">
 								<div className="image-placeholder">
@@ -273,7 +266,6 @@ const AnimalDetailPage = () => {
 							</div>
 						</div>
 
-						{/* Основная информация */}
 						<div className="basic-info-section">
 							<div className="stats-grid">
 								{animal.season_activity && (
@@ -388,7 +380,6 @@ const AnimalDetailPage = () => {
 							</div>
 						</div>
 
-						{/* Подробное описание */}
 						{animal.full_description && (
 							<div className="description-section">
 								<h2 className="section-title">
@@ -414,7 +405,6 @@ const AnimalDetailPage = () => {
 							</div>
 						)}
 
-						{/* Поведение */}
 						{animal.behavior && (
 							<div className="behavior-section">
 								<h2 className="section-title">
@@ -438,7 +428,6 @@ const AnimalDetailPage = () => {
 							</div>
 						)}
 
-						{/* Действия при встрече */}
 						{meetingActions.length > 0 && (
 							<div className="actions-section">
 								<h2 className="section-title">
@@ -474,7 +463,6 @@ const AnimalDetailPage = () => {
 							</div>
 						)}
 
-						{/* Интересные факты */}
 						{interestingFacts.length > 0 && (
 							<div className="facts-section">
 								<h2 className="section-title">
@@ -519,7 +507,6 @@ const AnimalDetailPage = () => {
 							</div>
 						)}
 
-						{/* Важный блок с информацией */}
 						<div className="important-section">
 							<div className="important-icon">
 								<svg

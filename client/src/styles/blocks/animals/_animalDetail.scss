@@ -1,4 +1,3 @@
-// app/animals/[id]/animal-detail.scss
 .animal-detail {
 	position: relative;
 	padding: 20px 20px 80px;
@@ -15,7 +14,6 @@
 	}
 }
 
-/* Кнопка назад - только иконка */
 .back-nav {
 	margin-bottom: 20px;
 
@@ -46,7 +44,6 @@
 	}
 }
 
-/* Заголовок */
 .detail-header {
 	margin-bottom: 30px;
 
@@ -68,7 +65,6 @@
 	}
 }
 
-/* Научное название */
 .scientific-name-large {
 	color: rgba(87, 103, 76, 0.8);
 	font-size: 18px;
@@ -77,7 +73,6 @@
 	font-weight: 500;
 }
 
-/* Бейдж региона */
 .region-badge {
 	display: inline-flex;
 	align-items: center;
@@ -91,7 +86,6 @@
 	border: 1px solid rgba(229, 235, 224, 1);
 }
 
-/* Уровень опасности */
 .danger-badge-large {
 	display: inline-flex;
 	align-items: center;
@@ -112,7 +106,6 @@
 	}
 }
 
-/* Тип животного */
 .animal-type-badge-large {
 	display: flex;
 	align-items: center;
@@ -148,7 +141,6 @@
 	display: inline-block;
 }
 
-/* Изображение */
 .image-section {
 	margin-bottom: 30px;
 
@@ -172,7 +164,6 @@
 	}
 }
 
-/* Статистика */
 .basic-info-section {
 	margin-bottom: 30px;
 
@@ -226,7 +217,6 @@
 	}
 }
 
-/* Общие стили для секций */
 .description-section,
 .behavior-section,
 .actions-section,
@@ -263,7 +253,6 @@
 	}
 }
 
-/* Описание */
 .description-section {
 	.description-content {
 		color: rgba(62, 77, 51, 0.9);
@@ -280,7 +269,6 @@
 	}
 }
 
-/* Поведение */
 .behavior-section {
 	.behavior-content {
 		color: rgba(62, 77, 51, 0.9);
@@ -289,7 +277,6 @@
 	}
 }
 
-/* Действия при встрече */
 .actions-section {
 	.actions-list {
 		display: flex;
@@ -336,7 +323,6 @@
 	}
 }
 
-/* Интересные факты */
 .facts-section {
 	.facts-list {
 		display: grid;
@@ -374,7 +360,6 @@
 	}
 }
 
-/* Важный блок */
 .important-section {
 	background: rgba(255, 235, 235, 0.9);
 	border: 2px solid rgba(255, 182, 182, 0.5);
@@ -421,7 +406,6 @@
 	}
 }
 
-/* Загрузка и ошибки */
 .loading-spinner {
 	position: absolute;
 	top: 320px;
@@ -480,7 +464,46 @@
 	}
 }
 
-/* Адаптивность */
+@media (max-width: 1024px) {
+	.animal-detail .container {
+		max-width: 900px;
+	}
+
+	.basic-info-section .stats-grid {
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	}
+
+	.image-section .detail-image {
+		height: 250px;
+	}
+}
+
+@media (max-width: 900px) {
+	.animal-detail .container {
+		max-width: 800px;
+	}
+
+	.detail-header .detail-title {
+		font-size: 30px;
+		line-height: 38px;
+	}
+
+	.basic-info-section .stats-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.image-section .detail-image {
+		height: 230px;
+	}
+
+	.description-section,
+	.behavior-section,
+	.actions-section,
+	.facts-section {
+		padding: 28px;
+	}
+}
+
 @media (max-width: 768px) {
 	.animal-detail {
 		padding: 16px 16px 80px;
@@ -504,6 +527,7 @@
 		text-align: center;
 		gap: 16px;
 		padding: 20px;
+		margin-top: 30px;
 	}
 
 	.facts-section .facts-list {
@@ -515,14 +539,77 @@
 	.actions-section,
 	.facts-section {
 		padding: 24px;
+		margin-bottom: 20px;
 
 		.section-title {
 			font-size: 18px;
 		}
 	}
+
+	.actions-section .actions-list .action-item {
+		padding: 16px;
+		gap: 14px;
+	}
+}
+
+@media (max-width: 600px) {
+	.detail-header {
+		.detail-title {
+			font-size: 26px;
+			line-height: 34px;
+		}
+
+		.header-meta {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 15px;
+		}
+	}
+
+	.scientific-name-large {
+		font-size: 16px;
+		margin-bottom: 16px;
+	}
+
+	.danger-badge-large {
+		padding: 10px 16px;
+		gap: 8px;
+
+		.danger-label {
+			font-size: 14px;
+		}
+	}
+
+	.animal-type-badge-large {
+		padding: 10px 16px;
+		gap: 10px;
+
+		.animal-type-content .animal-type-label-large {
+			font-size: 14px;
+		}
+	}
+
+	.stat-card {
+		padding: 18px;
+		gap: 14px;
+	}
+
+	.description-section .description-content {
+		font-size: 15px;
+		line-height: 24px;
+	}
+
+	.behavior-section .behavior-content {
+		font-size: 15px;
+		line-height: 24px;
+	}
 }
 
 @media (max-width: 480px) {
+	.animal-detail {
+		padding: 14px 14px 80px;
+	}
+
 	.detail-header {
 		.detail-title {
 			font-size: 24px;
@@ -530,9 +617,8 @@
 		}
 	}
 
-	.danger-badge-large,
-	.animal-type-badge-large {
-		padding: 10px 16px;
+	.basic-info-section .stats-grid {
+		grid-template-columns: 1fr;
 	}
 
 	.stat-card {
@@ -547,5 +633,197 @@
 				font-size: 14px;
 			}
 		}
+	}
+
+	.image-section .detail-image {
+		height: 180px;
+		border-radius: 16px;
+	}
+
+	.description-section,
+	.behavior-section,
+	.actions-section,
+	.facts-section {
+		padding: 20px;
+		margin-bottom: 18px;
+		border-radius: 14px;
+
+		.section-title {
+			font-size: 17px;
+		}
+	}
+
+	.actions-section .actions-list .action-item {
+		padding: 14px;
+
+		.action-number {
+			width: 28px;
+			height: 28px;
+			font-size: 14px;
+		}
+
+		.action-content .action-text {
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+
+	.facts-section .facts-list .fact-item {
+		padding: 14px;
+
+		.fact-text {
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+
+	.important-section {
+		padding: 18px;
+		margin-top: 25px;
+
+		.important-icon {
+			width: 48px;
+			height: 48px;
+
+			svg {
+				width: 20px;
+				height: 20px;
+			}
+		}
+
+		.important-content {
+			.important-title {
+				font-size: 20px;
+			}
+
+			.important-text {
+				font-size: 14px;
+				line-height: 22px;
+			}
+		}
+	}
+}
+
+@media (max-height: 480px) and (orientation: landscape) {
+	.animal-detail {
+		padding: 12px 12px 70px;
+		min-height: auto;
+	}
+
+	.detail-header .detail-title {
+		font-size: 26px;
+		line-height: 32px;
+		margin-bottom: 10px;
+	}
+
+	.scientific-name-large {
+		font-size: 14px;
+		margin-bottom: 14px;
+	}
+
+	.basic-info-section {
+		margin-bottom: 20px;
+
+		.stats-grid {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 12px;
+		}
+
+		.stat-card {
+			padding: 14px;
+			gap: 12px;
+
+			.stat-icon {
+				width: 36px;
+				height: 36px;
+
+				svg {
+					width: 18px;
+					height: 18px;
+				}
+			}
+		}
+	}
+
+	.image-section {
+		margin-bottom: 20px;
+
+		.detail-image {
+			height: 160px;
+		}
+	}
+
+	.description-section .description-content {
+		font-size: 14px;
+		line-height: 22px;
+	}
+
+	.behavior-section .behavior-content {
+		font-size: 14px;
+		line-height: 22px;
+	}
+}
+
+@media (max-width: 360px) {
+	.animal-detail {
+		padding: 12px 12px 70px;
+	}
+
+	.detail-header .detail-title {
+		font-size: 22px;
+		line-height: 28px;
+	}
+
+	.back-nav .back-button-icon {
+		width: 40px;
+		height: 40px;
+	}
+
+	.danger-badge-large {
+		padding: 8px 14px;
+
+		.danger-label {
+			font-size: 13px;
+		}
+	}
+
+	.animal-type-badge-large {
+		padding: 8px 14px;
+		gap: 8px;
+
+		.animal-type-icon-large {
+			font-size: 20px;
+		}
+
+		.animal-type-content .animal-type-label-large {
+			font-size: 13px;
+		}
+	}
+
+	.stat-card {
+		padding: 14px 12px;
+		gap: 12px;
+	}
+
+	.image-section .detail-image {
+		height: 160px;
+		border-radius: 14px;
+	}
+
+	.description-section,
+	.behavior-section,
+	.actions-section,
+	.facts-section {
+		padding: 18px;
+		border-radius: 14px;
+	}
+
+	.loading-spinner {
+		padding: 60px 15px;
+		top: 280px;
+	}
+
+	.error-message {
+		padding: 60px 15px;
 	}
 }

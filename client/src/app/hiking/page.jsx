@@ -4,17 +4,12 @@ import Nav from "../components/Nav";
 import ListHiking from "../components/hiking/ListHiking";
 
 const Hiking = () => {
-	// Состояния для фильтров
 	const [filters, setFilters] = useState({
 		difficulty: "all",
 		maxDistance: "",
 		maxDuration: "",
 	});
-
-	// Состояние для отфильтрованных маршрутов
 	const [filteredRoutes, setFilteredRoutes] = useState([]);
-
-	// Состояние для кастомного селекта
 	const [isOpen, setIsOpen] = useState(false);
 	const [loading, setLoading] = useState(false);
 	const [error, setError] = useState(null);
@@ -31,13 +26,10 @@ const Hiking = () => {
 		{ value: "5", label: "Эксперт (5 звезд)" },
 	];
 
-	// Функция для загрузки маршрутов с сервера
 	const fetchRoutes = async (currentFilters = filters) => {
 		setLoading(true);
 		setError(null);
-
 		try {
-			// Собираем параметры запроса
 			const params = new URLSearchParams();
 			if (currentFilters.difficulty !== "all") {
 				params.append("difficulty", currentFilters.difficulty);
@@ -48,19 +40,13 @@ const Hiking = () => {
 			if (currentFilters.maxDuration) {
 				params.append("maxDuration", currentFilters.maxDuration);
 			}
-
-			// Запрос к нашему серверу
 			const response = await fetch(
 				`http://localhost:5001/api/routes?${params}`
 			);
-
 			if (!response.ok) {
 				throw new Error(`Ошибка сервера: ${response.status}`);
 			}
-
 			const data = await response.json();
-
-			// Преобразуем данные из БД в формат для компонента
 			const formattedData = data.map((route) => ({
 				id: route.id,
 				title: route.title,
@@ -79,7 +65,6 @@ const Hiking = () => {
 				region: route.region,
 				best_season: route.best_season,
 			}));
-
 			setFilteredRoutes(formattedData);
 		} catch (err) {
 			console.error("Ошибка при загрузке маршрутов:", err);
@@ -92,42 +77,27 @@ const Hiking = () => {
 		}
 	};
 
-	// Загружаем маршруты при первом рендере
 	useEffect(() => {
 		fetchRoutes();
 	}, []);
 
-	// Функция обработки изменения фильтров с сохранением фокуса
 	const handleFilterChange = (filterName, value, inputRef = null) => {
-		const newFilters = {
-			...filters,
-			[filterName]: value,
-		};
+		const newFilters = { ...filters, [filterName]: value };
 		setFilters(newFilters);
-
-		// Сохраняем фокус на инпуте после обновления
 		if (inputRef && inputRef.current) {
 			setTimeout(() => {
 				inputRef.current.focus();
 			}, 0);
 		}
-
 		fetchRoutes(newFilters);
 	};
 
-	// Обработчик для числовых инпутов
 	const handleNumericInputChange = (e, filterName, inputRef, maxValue) => {
 		const value = e.target.value;
-
-		// Разрешаем только цифры, точку и запятую
 		if (value === "" || /^[\d.,]*$/.test(value)) {
-			// Заменяем запятые на точки для корректного парсинга
 			const normalizedValue = value.replace(",", ".");
-
-			// Проверяем, что значение не превышает максимальное
 			const numValue = parseFloat(normalizedValue);
 			if (normalizedValue === "" || (numValue >= 0 && numValue <= maxValue)) {
-				// Ограничиваем длину
 				if (value.length <= 6) {
 					handleFilterChange(filterName, normalizedValue, inputRef);
 				}
@@ -135,7 +105,6 @@ const Hiking = () => {
 		}
 	};
 
-	// Функция сброса всех фильтров
 	const handleResetFilters = () => {
 		const resetFilters = {
 			difficulty: "all",
@@ -146,14 +115,12 @@ const Hiking = () => {
 		fetchRoutes(resetFilters);
 	};
 
-	// Закрытие селекта при клике вне его
 	useEffect(() => {
 		const handleClickOutside = (event) => {
 			if (selectRef.current && !selectRef.current.contains(event.target)) {
 				setIsOpen(false);
 			}
 		};
-
 		document.addEventListener("mousedown", handleClickOutside);
 		return () => document.removeEventListener("mousedown", handleClickOutside);
 	}, []);
@@ -199,7 +166,6 @@ const Hiking = () => {
 					</div>
 
 					<div className="filters">
-						{/* Фильтр сложности */}
 						<div className="filter">
 							<div className="filter-header">
 								<div className="filter-icon">
@@ -219,7 +185,6 @@ const Hiking = () => {
 									<span>Сложность</span>
 								</div>
 							</div>
-
 							<div className="custom-select-wrapper" ref={selectRef}>
 								<div
 									className={`custom-select ${isOpen ? "open" : ""} ${
@@ -244,7 +209,6 @@ const Hiking = () => {
 										</svg>
 									</div>
 								</div>
-
 								{isOpen && !loading && (
 									<div className="dropdown-menu">
 										{difficultyOptions.map((option) => (
@@ -266,7 +230,6 @@ const Hiking = () => {
 							</div>
 						</div>
 
-						{/* Фильтр расстояния */}
 						<div className="filter">
 							<div className="filter-header">
 								<div className="filter-icon">
@@ -322,7 +285,6 @@ const Hiking = () => {
 							</div>
 						</div>
 
-						{/* Фильтр продолжительности */}
 						<div className="filter">
 							<div className="filter-header">
 								<div className="filter-icon">
@@ -376,7 +338,6 @@ const Hiking = () => {
 						</div>
 					</div>
 
-					{/* Показать сообщение об ошибке если есть */}
 					{error && (
 						<div className="filter-error-message">
 							<svg
@@ -404,13 +365,10 @@ const Hiking = () => {
 							<span>Загрузка маршрутов...</span>
 						</div>
 					) : (
-						<>
-							<ListHiking routes={filteredRoutes} />
-						</>
+						<ListHiking routes={filteredRoutes} />
 					)}
 				</div>
 			</div>
-
 			<Nav idActive={2} />
 		</>
 	);
