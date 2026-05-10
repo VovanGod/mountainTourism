@@ -78,29 +78,29 @@ const Nav = ({ idActive })=>{
                                 alt: item.alt
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/Nav.jsx",
-                                lineNumber: 45,
+                                lineNumber: 44,
                                 columnNumber: 8
                             }, ("TURBOPACK compile-time value", void 0)),
                             item.text
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/components/Nav.jsx",
-                        lineNumber: 41,
+                        lineNumber: 40,
                         columnNumber: 7
                     }, ("TURBOPACK compile-time value", void 0))
                 }, item.id, false, {
                     fileName: "[project]/src/app/components/Nav.jsx",
-                    lineNumber: 40,
+                    lineNumber: 39,
                     columnNumber: 6
                 }, ("TURBOPACK compile-time value", void 0)))
         }, void 0, false, {
             fileName: "[project]/src/app/components/Nav.jsx",
-            lineNumber: 38,
+            lineNumber: 37,
             columnNumber: 4
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/src/app/components/Nav.jsx",
-        lineNumber: 37,
+        lineNumber: 36,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0));
 };
