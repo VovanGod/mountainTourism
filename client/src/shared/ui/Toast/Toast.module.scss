@@ -1,0 +1,51 @@
+.viewport {
+	position: fixed;
+	top: 18px;
+	left: 18px;
+	z-index: 1400;
+	display: flex;
+	width: min(360px, calc(100vw - 36px));
+	flex-direction: column;
+	gap: 10px;
+	pointer-events: none;
+}
+
+.toast {
+	width: 100%;
+	padding: 13px 15px;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	border-radius: 12px;
+	background: rgba(255, 255, 255, 0.95);
+	box-shadow: 0 14px 32px rgba(62, 77, 51, 0.18);
+	backdrop-filter: blur(14px);
+	color: var(--color-forest);
+	font-size: 14px;
+	font-weight: 800;
+	line-height: 20px;
+	text-align: left;
+	pointer-events: auto;
+}
+
+.success {
+	border-color: rgba(155, 169, 112, 0.45);
+	background: rgba(243, 248, 235, 0.96);
+}
+
+.error {
+	border-color: rgba(237, 44, 44, 0.28);
+	background: rgba(255, 241, 241, 0.96);
+	color: var(--color-danger);
+}
+
+.info {
+	border-color: rgba(184, 103, 46, 0.28);
+	background: rgba(255, 250, 243, 0.96);
+}
+
+@media (max-width: 560px) {
+	.viewport {
+		top: 64px;
+		left: 10px;
+		width: min(340px, calc(100vw - 20px));
+	}
+}

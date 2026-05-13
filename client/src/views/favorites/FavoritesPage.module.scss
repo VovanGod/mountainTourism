@@ -1,0 +1,82 @@
+.page {
+	min-height: 100vh;
+	padding: 48px 0 110px;
+	background: linear-gradient(
+		180deg,
+		rgba(244, 247, 242, 0.78),
+		rgba(232, 240, 228, 0.38)
+	);
+}
+
+.header {
+	margin-bottom: 24px;
+	padding-right: 180px;
+}
+
+.header h1 {
+	color: var(--color-forest);
+	font-family: var(--font-title);
+	font-size: clamp(30px, 6vw, 44px);
+	line-height: 1.1;
+}
+
+.header p {
+	max-width: 720px;
+	margin-top: 12px;
+	color: var(--color-moss);
+	font-size: 16px;
+	line-height: 25px;
+}
+
+.sections {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.section {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.sectionHeader {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 14px;
+}
+
+.sectionHeader h2 {
+	color: var(--color-forest);
+	font-family: var(--font-title);
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.sectionHeader a {
+	padding: 10px 14px;
+	border: 1px solid rgba(184, 103, 46, 0.28);
+	border-radius: 12px;
+	background: #fff;
+	color: var(--color-earth);
+	font-size: 14px;
+	font-weight: 800;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	gap: 18px;
+}
+
+@media (max-width: 720px) {
+	.header {
+		padding-right: 0;
+	}
+
+	.sectionHeader {
+		align-items: flex-start;
+		flex-direction: column;
+	}
+}

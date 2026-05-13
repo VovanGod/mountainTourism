@@ -1,0 +1,52 @@
+.danger,
+.dangerLarge {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-style: solid;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: 0.4px;
+}
+
+.danger {
+	padding: 6px 10px;
+	border-width: 1px;
+	border-radius: 999px;
+	font-size: 11px;
+}
+
+.dangerLarge {
+	padding: 11px 16px;
+	border-width: 2px;
+	border-radius: 14px;
+	font-size: 14px;
+}
+
+.type,
+.typeLarge {
+	display: inline-flex;
+	align-items: center;
+	gap: 7px;
+	border: 1px solid var(--color-line);
+	background: var(--color-cloud);
+	color: var(--color-moss);
+	font-weight: 700;
+}
+
+.type {
+	padding: 6px 10px;
+	border-radius: 12px;
+	font-size: 13px;
+}
+
+.typeLarge {
+	padding: 11px 16px;
+	border-radius: 14px;
+	font-size: 15px;
+}
+
+.type svg,
+.typeLarge svg {
+	color: var(--color-earth);
+}

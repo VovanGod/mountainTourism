@@ -1,0 +1,58 @@
+.page {
+	min-height: 100vh;
+	padding: 30px 0 118px;
+}
+
+.header h1 {
+	color: var(--color-forest);
+	font-family: var(--font-title);
+	font-size: clamp(26px, 4vw, 34px);
+	line-height: 1.15;
+}
+
+.emergency {
+	display: flex;
+	gap: 14px;
+	margin: 18px 0 26px;
+	padding: 18px;
+	border: 1px solid rgba(184, 103, 46, 0.2);
+	border-radius: var(--radius-card);
+	background: rgba(184, 103, 46, 0.08);
+	color: var(--color-earth);
+}
+
+.icon {
+	display: grid;
+	width: 48px;
+	height: 48px;
+	flex: 0 0 48px;
+	place-items: center;
+	border-radius: 12px;
+	background: rgba(184, 103, 46, 0.1);
+}
+
+.emergency h2 {
+	margin-bottom: 6px;
+	color: var(--color-forest);
+	font-family: var(--font-title);
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.emergency p {
+	color: rgba(87, 103, 76, 0.9);
+	font-size: 15px;
+	line-height: 22px;
+}
+
+@media (max-width: 640px) {
+	.page {
+		padding: 22px 0 100px;
+	}
+
+	.emergency {
+		align-items: center;
+		flex-direction: column;
+		text-align: center;
+	}
+}

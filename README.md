@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Горный туризм
 
-## Getting Started
+Курсовой проект: приложение для горного туризма в Краснодарском крае и на Западном Кавказе.
 
-First, run the development server:
+## Что есть
+
+- Маршруты с подробным описанием, GPX-треками, офлайн-памятками и отзывами.
+- Животные с уровнем опасности, поведением и действиями при встрече.
+- Авторизация пользователей, избранные маршруты и животные.
+- Живая погода через backend и Open-Meteo.
+- Рабочий виджет МЧС с номером 112.
+- Расширенная страница безопасности.
+
+## Стек
+
+- `client` - Next.js, React, SCSS Modules.
+- `server` - Express API.
+- База данных - PostgreSQL.
+
+## Быстрый запуск
+
+1. Установить зависимости:
+
+```bash
+npm run install:all
+```
+
+2. Проверить `server/.env`.
+
+Если файла нет, можно взять пример из `server/.env.example`. Для твоего локального PostgreSQL обычно достаточно:
+
+```env
+PGHOST=localhost
+PGPORT=5432
+PGUSER=postgres
+PGPASSWORD=12345
+PGDATABASE=hiking_db
+JWT_SECRET=replace-with-a-long-random-secret
+```
+
+3. Запустить клиент и сервер одной командой:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Клиент: [http://localhost:3000](http://localhost:3000)  
+API: [http://localhost:5001](http://localhost:5001)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+При старте сервер сам проверяет базу `hiking_db`, создает таблицы, добавляет недостающие колонки и обновляет demo-данные.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Полезные команды
 
-## Learn More
+```bash
+npm run lint
+npm run build
+npm run server:start
+npm run client
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Архитектура клиента
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Клиент разложен по простой FSD-структуре:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `src/app` - роуты Next.js, layout и провайдеры.
+- `src/views` - экраны страниц.
+- `src/widgets` - крупные блоки страниц.
+- `src/features` - пользовательские сценарии: auth, избранное, отзывы, offline, погода.
+- `src/entities` - маршруты, животные, безопасность, погода.
+- `src/shared` - общий API-клиент, UI, стили и утилиты.

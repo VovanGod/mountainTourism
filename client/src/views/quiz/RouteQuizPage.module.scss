@@ -1,0 +1,20 @@
+.page {
+	min-height: 100vh;
+	padding: 48px 0 110px;
+	background: linear-gradient(
+		180deg,
+		rgba(244, 247, 242, 0.78),
+		rgba(232, 240, 228, 0.38)
+	);
+}
+
+.container {
+	width: min(980px, calc(100% - 40px));
+	margin: 0 auto;
+}
+
+@media (max-width: 640px) {
+	.container {
+		width: min(100% - 24px, 980px);
+	}
+}

@@ -1,0 +1,15 @@
+.root {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	color: var(--color-earth);
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.stars {
+	display: inline-flex;
+	align-items: center;
+	gap: 3px;
+	color: var(--color-earth);
+}

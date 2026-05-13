@@ -1,28 +1,19 @@
-import { Montserrat, Open_Sans } from "next/font/google";
-import "./../styles/main.scss";
-
-const montserrat = Montserrat({
-	variable: "--font-title",
-	subsets: ["latin"],
-});
-
-const open_Sans = Open_Sans({
-	variable: "--font-main",
-	subsets: ["latin"],
-});
+import "@/shared/styles/globals.scss";
+import { Providers } from "./providers";
 
 export const metadata = {
 	title: "Горный гид Краснодарского края",
 	description:
-		"Путеводитель по горным маршрутам, безопасность в походах, информация о животных и первая помощь в Краснодарском крае",
-	keywords: "горный туризм, походы, Краснодарский край, безопасность, маршруты",
+		"Путеводитель по горным маршрутам, безопасности в походах и дикой природе Краснодарского края",
+	keywords:
+		"горный туризм, походы, Краснодарский край, маршруты, безопасность, животные",
 };
 
 export default function RootLayout({ children }) {
 	return (
 		<html lang="ru">
-			<body className={`${montserrat.variable} ${open_Sans.variable}`}>
-				{children}
+			<body>
+				<Providers>{children}</Providers>
 			</body>
 		</html>
 	);

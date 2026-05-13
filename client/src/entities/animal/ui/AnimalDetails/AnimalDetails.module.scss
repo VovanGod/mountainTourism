@@ -1,0 +1,262 @@
+.root {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.backNav {
+	display: flex;
+}
+
+.backButton {
+	display: inline-flex;
+	width: 44px;
+	height: 44px;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid rgba(184, 103, 46, 0.22);
+	border-radius: 999px;
+	background: rgba(255, 255, 255, 0.85);
+	box-shadow: 0 2px 8px rgba(62, 77, 51, 0.1);
+	color: var(--color-earth);
+	transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.backButton:hover {
+	transform: translateY(-2px);
+	background: #fff;
+}
+
+.header {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+	align-items: flex-start;
+}
+
+.header h1 {
+	color: var(--color-forest);
+	font-family: var(--font-title);
+	font-size: clamp(28px, 5vw, 38px);
+	line-height: 1.15;
+}
+
+.header em {
+	display: block;
+	color: rgba(87, 103, 76, 0.82);
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.headerMeta {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 12px;
+}
+
+.region {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	padding: 10px 14px;
+	border: 1px solid var(--color-line);
+	border-radius: 14px;
+	background: var(--color-cloud);
+	color: var(--color-moss);
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.heroImage {
+	height: 320px;
+	border-radius: 20px;
+}
+
+.statsGrid {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 14px;
+}
+
+.statCard,
+.section {
+	border: 1px solid var(--color-line);
+	border-radius: var(--radius-card);
+	background: rgba(255, 255, 255, 0.95);
+	box-shadow: var(--shadow-soft);
+}
+
+.statCard {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	padding: 18px;
+}
+
+.statIcon {
+	display: grid;
+	width: 42px;
+	height: 42px;
+	flex: 0 0 42px;
+	place-items: center;
+	border-radius: 12px;
+	background: rgba(184, 103, 46, 0.1);
+	color: var(--color-earth);
+}
+
+.statLabel {
+	margin-bottom: 4px;
+	color: var(--color-moss);
+	font-size: 13px;
+	font-weight: 700;
+}
+
+.statValue {
+	color: var(--color-forest);
+	font-size: 15px;
+	font-weight: 800;
+	line-height: 22px;
+}
+
+.section {
+	padding: 28px;
+}
+
+.section h2 {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 12px;
+	color: var(--color-forest);
+	font-family: var(--font-title);
+	font-size: 20px;
+	line-height: 28px;
+}
+
+.section h2 svg {
+	color: var(--color-earth);
+}
+
+.sectionSubtitle {
+	margin-bottom: 16px;
+	color: var(--color-moss);
+	font-size: 13px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.text {
+	color: rgba(62, 77, 51, 0.9);
+	font-size: 16px;
+	line-height: 26px;
+}
+
+.numberedList {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.numberedItem {
+	display: flex;
+	align-items: flex-start;
+	gap: 14px;
+	padding: 16px;
+	border: 1px solid rgba(255, 224, 178, 0.8);
+	border-radius: 12px;
+	background: rgba(255, 243, 224, 0.55);
+}
+
+.numberedItem span {
+	display: grid;
+	width: 30px;
+	height: 30px;
+	flex: 0 0 30px;
+	place-items: center;
+	border-radius: 999px;
+	background: var(--color-earth);
+	color: #fff;
+	font-weight: 800;
+}
+
+.numberedItem p {
+	color: var(--color-forest);
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 22px;
+}
+
+.chipGrid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+	gap: 12px;
+}
+
+.chip {
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+	padding: 14px;
+	border: 1px solid rgba(229, 235, 224, 0.9);
+	border-radius: 12px;
+	background: rgba(242, 245, 239, 0.8);
+	color: var(--color-forest);
+	font-size: 15px;
+	line-height: 22px;
+}
+
+.chip svg {
+	flex: 0 0 auto;
+	color: var(--color-earth);
+}
+
+.important {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	padding: 22px;
+	border: 2px solid rgba(255, 182, 182, 0.55);
+	border-radius: var(--radius-card);
+	background: rgba(255, 235, 235, 0.92);
+	color: rgba(183, 28, 28, 1);
+}
+
+.important svg {
+	flex: 0 0 auto;
+}
+
+.important h2 {
+	margin-bottom: 6px;
+	font-family: var(--font-title);
+	font-size: 20px;
+	line-height: 26px;
+}
+
+.important p {
+	color: rgba(183, 28, 28, 0.9);
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 22px;
+}
+
+@media (max-width: 900px) {
+	.statsGrid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media (max-width: 560px) {
+	.statsGrid {
+		grid-template-columns: 1fr;
+	}
+
+	.heroImage {
+		height: 220px;
+	}
+
+	.section,
+	.important {
+		padding: 20px;
+	}
+}

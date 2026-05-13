@@ -1,0 +1,46 @@
+.state {
+	display: flex;
+	min-height: 280px;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 14px;
+	padding: 44px 20px;
+	border-radius: var(--radius-card);
+	background: rgba(255, 255, 255, 0.9);
+	box-shadow: var(--shadow-soft);
+	text-align: center;
+}
+
+.state h2 {
+	color: var(--color-forest);
+	font-family: var(--font-title);
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.state p {
+	max-width: 540px;
+	color: var(--color-moss);
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.icon {
+	color: rgba(184, 103, 46, 0.45);
+}
+
+.spinner {
+	width: 48px;
+	height: 48px;
+	border: 4px solid rgba(184, 103, 46, 0.2);
+	border-top-color: var(--color-earth);
+	border-radius: 50%;
+	animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+	to {
+		transform: rotate(360deg);
+	}
+}

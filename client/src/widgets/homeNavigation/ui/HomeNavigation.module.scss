@@ -1,0 +1,120 @@
+.nav {
+	position: relative;
+	z-index: 1;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+	width: min(1040px, 100%);
+	justify-content: center;
+	gap: 16px;
+	margin: 24px 0;
+}
+
+.card {
+	display: flex;
+	min-height: 242px;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 18px;
+	padding: 24px;
+	border: 1px solid rgba(255, 255, 255, 0.35);
+	border-radius: var(--radius-card);
+	background: rgba(255, 255, 255, 0.22);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+	backdrop-filter: blur(12px);
+	transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.card:hover {
+	transform: translateY(-4px);
+	border-color: rgba(184, 103, 46, 0.28);
+}
+
+.routes {
+	background: linear-gradient(
+			135deg,
+			rgba(184, 103, 46, 0.2),
+			rgba(184, 103, 46, 0.05)
+		),
+		rgba(255, 255, 255, 0.2);
+}
+
+.animals {
+	background: linear-gradient(
+			135deg,
+			rgba(155, 169, 112, 0.22),
+			rgba(155, 169, 112, 0.05)
+		),
+		rgba(255, 255, 255, 0.2);
+}
+
+.safety {
+	background: linear-gradient(
+			135deg,
+			rgba(121, 181, 210, 0.22),
+			rgba(121, 181, 210, 0.05)
+		),
+		rgba(255, 255, 255, 0.2);
+}
+
+.quiz {
+	background: linear-gradient(
+			135deg,
+			rgba(234, 190, 91, 0.24),
+			rgba(184, 103, 46, 0.06)
+		),
+		rgba(255, 255, 255, 0.2);
+}
+
+.icon {
+	display: grid;
+	width: 64px;
+	height: 64px;
+	place-items: center;
+	border-radius: 999px;
+	background: rgba(255, 255, 255, 0.45);
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	text-align: left;
+}
+
+.content strong {
+	color: var(--color-forest);
+	font-family: var(--font-title);
+	font-size: 18px;
+	line-height: 26px;
+}
+
+.content span {
+	color: var(--color-moss);
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.action {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	color: var(--color-earth);
+	font-size: 14px;
+	font-weight: 700;
+}
+
+@media (max-width: 920px) {
+	.nav {
+		grid-template-columns: repeat(2, minmax(0, 220px));
+	}
+}
+
+@media (max-width: 520px) {
+	.nav {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.card {
+		min-height: 170px;
+	}
+}

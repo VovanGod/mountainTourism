@@ -1,0 +1,120 @@
+.root {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+}
+
+.header h1 {
+	color: var(--color-forest);
+	font-family: var(--font-title);
+	font-size: clamp(26px, 4vw, 34px);
+	line-height: 1.15;
+}
+
+.reset {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	padding: 10px 14px;
+	border: 1px solid rgba(184, 103, 46, 0.3);
+	border-radius: 12px;
+	background: var(--color-cloud);
+	color: var(--color-earth);
+	font-size: 14px;
+	font-weight: 700;
+	transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.reset:hover {
+	border-color: rgba(184, 103, 46, 0.5);
+	background: rgba(184, 103, 46, 0.1);
+}
+
+.reset:disabled {
+	cursor: not-allowed;
+	opacity: 0.6;
+}
+
+.panel {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 18px;
+	padding: 17px;
+	border: 1px solid rgba(255, 255, 255, 0.35);
+	border-radius: var(--radius-card);
+	background: rgba(160, 160, 160, 0.2);
+}
+
+.field {
+	display: flex;
+	min-width: 260px;
+	flex: 1 1 260px;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.label {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	color: var(--color-earth);
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.inputWrap {
+	position: relative;
+	display: block;
+}
+
+.input {
+	width: 100%;
+	padding: 15px 52px 15px 18px;
+	border: 2px solid var(--color-line);
+	border-radius: var(--radius-control);
+	background: var(--color-cloud);
+	box-shadow: 0 2px 8px rgba(62, 77, 51, 0.08);
+	color: var(--color-forest);
+	font-size: 15px;
+	font-weight: 600;
+	transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input:hover,
+.input:focus {
+	border-color: rgba(184, 103, 46, 0.7);
+	background: #fff;
+	box-shadow: 0 4px 14px rgba(184, 103, 46, 0.14);
+}
+
+.unit {
+	position: absolute;
+	top: 50%;
+	right: 18px;
+	color: rgba(62, 77, 51, 0.65);
+	font-size: 14px;
+	font-weight: 700;
+	transform: translateY(-50%);
+}
+
+@media (max-width: 640px) {
+	.header {
+		align-items: flex-start;
+		flex-direction: column;
+	}
+
+	.panel {
+		padding: 12px;
+	}
+
+	.field {
+		min-width: 100%;
+	}
+}

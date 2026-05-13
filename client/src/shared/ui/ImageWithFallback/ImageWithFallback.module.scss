@@ -1,0 +1,21 @@
+.imageBox,
+.placeholder {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	background: linear-gradient(
+		135deg,
+		rgba(184, 103, 46, 0.12),
+		rgba(155, 169, 112, 0.12)
+	);
+}
+
+.image {
+	object-fit: cover;
+}
+
+.placeholder {
+	color: rgba(184, 103, 46, 0.35);
+}
